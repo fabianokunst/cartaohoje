@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Só <lastmod>: o Google ignora <priority> e <changefreq> desde 2023, e o Bing
+  também. Manter campos que ninguém lê só cria trabalho de manutenção.
+  Atualize a data ao publicar alteração de conteúdo — não a cada deploy.
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://cartaohoje.com.br/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://cartaohoje.com.br/hojepay/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cartaohoje.com.br/perguntas-frequentes/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cartaohoje.com.br/fale-conosco/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://cartaohoje.com.br/trabalhe-conosco/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url>
+    <loc>https://cartaohoje.com.br/</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://cartaohoje.com.br/baixar-o-app/</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://cartaohoje.com.br/hoje-pay/</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://cartaohoje.com.br/perguntas-frequentes/</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://cartaohoje.com.br/fale-conosco/</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://cartaohoje.com.br/trabalhe-conosco/</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://cartaohoje.com.br/politica-de-privacidade/</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
 </urlset>

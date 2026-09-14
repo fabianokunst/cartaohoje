@@ -1,0 +1,42 @@
+# Cartao Hoje — Netlify. Vai na raiz do site publicado, junto com _redirects.
+
+[build]
+  publish = "."
+
+# Barra final consistente: /hoje-pay redireciona para /hoje-pay/.
+# Sem isto o Netlify serve as duas, e o Google ve conteudo duplicado.
+[build.processing]
+  skip_processing = false
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    X-Frame-Options = "SAMEORIGIN"
+
+# Acento em llms.txt exige charset explicito.
+[[headers]]
+  for = "/*.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+# Nomes de arquivo estaveis: pode cachear por um ano.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML sempre revalidado, para que uma correcao chegue no mesmo dia.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

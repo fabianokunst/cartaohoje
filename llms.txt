@@ -1,0 +1,57 @@
+# Cartão Hoje
+
+> Cartão de crédito Visa internacional emitido pela HS Financeira S.A. (CNPJ
+> 07.512.441/0001-11), a instituição financeira do Grupo Herval. É solicitado
+> pelo aplicativo "Hoje — Cartão e HojePay", com resposta da análise de crédito
+> em poucos minutos e sem necessidade de abrir conta em banco.
+
+Ficha do produto:
+
+- Bandeira: Visa, internacional (aceito no Brasil e no exterior)
+- Mensalidade: R$ 12,90
+- Prazo para pagar: até 40 dias
+- Parcelamento: até 24x iguais
+- Pagamento por aproximação: sim
+- Cartão virtual pelo app: sim
+- Conta em banco: não é necessária
+- Idade mínima: 18 anos
+- Renda mínima: 1 salário mínimo
+- Documento exigido: RG emitido há até 10 anos, ou CNH válida (frente e verso).
+  Comprovante de endereço e de renda são opcionais.
+- Prazo da análise: poucos minutos, no próprio app
+- Após uma recusa: nova solicitação em 90 dias
+- Onde se pede: somente pelo aplicativo, para iPhone e Android
+
+Atendimento:
+
+- Central 24 horas: 3003 6680 (capitais) / 0800 400 6680 (demais localidades)
+- Serviço de Atendimento ao Cliente: 4020 2202 / 0800 602 2202 —
+  segunda a sexta 8h às 20h, sábado 8h às 18h
+- WhatsApp: (51) 4042 1377 — segunda a sexta 8h às 20h, sábado 8h às 18h
+- Ouvidoria: 0800 648 7070
+
+Aviso: crédito sujeito a análise e aprovação. As condições completas e
+definitivas estão no contrato e na tabela de tarifas, listados abaixo.
+
+## Páginas
+
+- [Home](https://cartaohoje.com.br/): O cartão: benefícios, os três passos para pedir, lojas parceiras do Grupo Herval, custos e as dúvidas mais frequentes.
+- [Baixar o app](https://cartaohoje.com.br/baixar-o-app/): Download do aplicativo Hoje para iPhone (App Store) e Android (Google Play). É por ele que o cartão é solicitado e gerenciado.
+- [Hoje Pay](https://cartaohoje.com.br/hoje-pay/): Hoje Pay, a carteira digital dentro do app: passo a passo para comprar aparelhos Apple na iPlace usando um cartão Bradesco, Banco do Brasil ou BTG Pactual.
+- [Perguntas frequentes](https://cartaohoje.com.br/perguntas-frequentes/): 23 perguntas e respostas sobre solicitação, documentos, análise de crédito, bandeira, mensalidade, desbloqueio, segunda via, fatura e contestação de compras.
+- [Fale conosco](https://cartaohoje.com.br/fale-conosco/): Todos os canais de atendimento com telefones, horários e formulário de contato.
+- [Trabalhe conosco](https://cartaohoje.com.br/trabalhe-conosco/): Carreiras na HS Financeira. As vagas são publicadas no portal do Grupo Herval.
+- [Política de Privacidade](https://cartaohoje.com.br/politica-de-privacidade/): Como a HS Financeira trata dados pessoais e como exercer os direitos previstos na LGPD.
+
+## Documentos oficiais (PDF)
+
+- [Cláusulas gerais do contrato](https://cartaohoje.com.br/assets/docs/clausulas-gerais-do-contrato.pdf): Regras de uso, encargos, limites e cancelamento.
+- [Tabela de tarifas](https://cartaohoje.com.br/assets/docs/tarifas-cartao-hoje.pdf): Valor de cada tarifa e quando ela se aplica.
+- [Proposta de adesão](https://cartaohoje.com.br/assets/docs/proposta-de-adesao-ao-cartao.pdf): Formulário assinado no pedido, com as características da operação.
+- [Termos de uso do app](https://cartaohoje.com.br/assets/docs/termos-de-uso-do-app.pdf): Condições de uso do aplicativo Hoje.
+- [Termo de adesão do Hoje Pay PLUS](https://cartaohoje.com.br/assets/docs/termo-de-adesao-hojepay-plus.pdf): Condições específicas da carteira digital.
+
+## Opcional
+
+- [Conteúdo integral do site em Markdown](https://cartaohoje.com.br/llms-full.txt): todas as páginas acima em um único arquivo.
+- [Sitemap XML](https://cartaohoje.com.br/sitemap.xml): lista canônica de URLs.

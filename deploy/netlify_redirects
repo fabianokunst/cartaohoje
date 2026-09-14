@@ -1,0 +1,13 @@
+# Cartao Hoje — Netlify / Cloudflare Pages. Renomeie para _redirects na raiz.
+# Uma linha por URL antiga levantada no Search Console do site atual.
+
+# host canonico
+https://www.cartaohoje.com.br/*   https://cartaohoje.com.br/:splat   301!
+
+# legado do WordPress
+/hojepay            /hoje-pay/    301!
+/hojepay/*          /hoje-pay/    301!
+
+# .html explicito -> URL limpa
+/index.html         /             301!
+/*/index.html       /:splat/      301!

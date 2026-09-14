@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baixar o app | Cartão Hoje para iPhone e Android</title>
+<meta name="description" content="Baixe o app do Cartão Hoje no iPhone ou no Android. Peça seu cartão, acompanhe a fatura, consulte o limite e pague com o Hoje Pay pelo celular.">
+<link rel="canonical" href="https://cartaohoje.com.br/baixar-o-app/">
+<link rel="alternate" hreflang="pt-BR" href="https://cartaohoje.com.br/baixar-o-app/">
+<link rel="alternate" hreflang="x-default" href="https://cartaohoje.com.br/baixar-o-app/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#F7F5F2">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cartão Hoje">
+<meta property="og:title" content="Baixar o app do Cartão Hoje">
+<meta property="og:description" content="Disponível para iPhone e Android. Peça seu cartão e acompanhe tudo pelo celular.">
+<meta property="og:url" content="https://cartaohoje.com.br/baixar-o-app/">
+<meta property="og:image" content="https://cartaohoje.com.br/assets/img/og/baixar-o-app.jpg">
+<meta property="og:image:secure_url" content="https://cartaohoje.com.br/assets/img/og/baixar-o-app.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="App do Cartão Hoje para iPhone e Android">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Baixar o app do Cartão Hoje">
+<meta name="twitter:description" content="Disponível para iPhone e Android. Peça seu cartão e acompanhe tudo pelo celular.">
+<meta name="twitter:image" content="https://cartaohoje.com.br/assets/img/og/baixar-o-app.jpg">
+<meta name="twitter:image:alt" content="App do Cartão Hoje para iPhone e Android">
+
+<link rel="icon" href="/assets/img/marca/logo/simbolo-laranja.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/marca/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/marca/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/assets/css/hoje.css">
+
+<script>
+/* ===========================================================================
+   Redirecionamento por plataforma — Cartão Hoje
+
+   A página inteira já chega pronta no HTML. Este script só decide se ela fica
+   coberta por alguns instantes enquanto a loja abre. Se qualquer elo falhar
+   — detecção errada, JS bloqueado, webview que engole o link, loja fora do ar
+   — a sobreposição some e o conteúdo continua lá, intacto. Nunca há tela
+   branca e nunca há beco sem saída.
+
+   PARA DESLIGAR O REDIRECIONAMENTO e deixar apenas a página de escolha,
+   troque REDIRECIONAR para false. Nada mais precisa mudar.
+   =========================================================================== */
+(function () {
+  "use strict";
+
+  var REDIRECIONAR = true;
+  var ESPERA = 3500;            /* ms até desistir e revelar a página */
+
+  var LOJA = {
+    ios:     "https://apps.apple.com/br/app/hoje-cart%C3%A3o-e-hojepay/id1590552557",
+    android: "https://play.google.com/store/apps/details?id=com.app.herval.hoje&hl=pt_BR"
+  };
+
+  var doc = document.documentElement;
+  var ua  = navigator.userAgent || "";
+
+  /* Buscadores, geradores de preview e robôs de auditoria precisam ver a
+     página, não a loja. Sem isto, o Googlebot indexa um redirecionamento e o
+     PageSpeed mede a App Store. */
+  var ROBO = /bot|crawl|spider|slurp|facebookexternalhit|bingpreview|headlesschrome|lighthouse|pagespeed|gtmetrix/i;
+
+  /* Aparelhos Huawei pós-2019 rodam Android sem Google Play: mandá-los para a
+     Play Store é um beco sem saída. Melhor mostrar a página de escolha. */
+  var SEM_PLAY = /huaweibrowser|hmscore/i;
+
+  function plataforma() {
+    if (/android/i.test(ua)) return SEM_PLAY.test(ua) ? null : "android";
+    if (/iphone|ipod|ipad/i.test(ua)) return "ios";
+    /* iPadOS 13+ se apresenta como Mac desktop. O toque é o que o entrega. */
+    if (/macintosh/i.test(ua) && navigator.maxTouchPoints > 1) return "ios";
+    return null;
+  }
+
+  function destino() {
+    if (!REDIRECIONAR) return null;
+    /* Escotilha de saída: ?ver=tudo abre a página sem redirecionar.
+       Serve para QA, para compartilhar o link e para o "não é seu aparelho". */
+    if (/[?&]ver=tudo(&|$)/.test(location.search)) return null;
+    if (ROBO.test(ua)) return null;
+    /* Voltar da loja recarrega esta página. Sem esta trava o usuário fica
+       preso: volta, é redirecionado, volta, é redirecionado. */
+    try { if (sessionStorage.getItem("hoje:redir")) return null; } catch (e) {}
+    return plataforma();
+  }
+
+  var os = destino();
+  if (!os) return;
+
+  try { sessionStorage.setItem("hoje:redir", "1"); } catch (e) {}
+
+  doc.setAttribute("data-os", os);
+  doc.setAttribute("data-redir", "");
+
+  var revelado = false;
+  function revelar() {
+    if (revelado) return;
+    revelado = true;
+    doc.removeAttribute("data-redir");
+  }
+
+  /* Voltando da loja pelo cache de navegação, a página reaparece exatamente
+     como estava — com a sobreposição no ar. Ela precisa sair. */
+  window.addEventListener("pageshow", function (e) { if (e.persisted) revelar(); });
+
+  function dispara() {
+    var relogio = setTimeout(revelar, ESPERA);
+
+    /* Página oculta = a loja assumiu a tela. Não há o que revelar atrás. */
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) clearTimeout(relogio);
+    });
+
+    /* Se um dia entrar analytics: dispare o evento AQUI, com
+       navigator.sendBeacon() — só ele sobrevive à troca de página. */
+
+    /* replace() e não href: não deixa rastro no histórico. Com href, o botão
+       "voltar" devolveria o usuário a esta página, que o redirecionaria de novo. */
+    location.replace(LOJA[os]);
+  }
+
+  /* A marcação acima (data-redir) é síncrona para não haver piscada, mas a
+     NAVEGAÇÃO espera o corpo da página existir. Em conexão lenta o <head>
+     chega muito antes do resto: disparar replace() aqui abandonaria o
+     download do conteúdo de fallback — justamente o que precisa estar
+     pronto se a loja não assumir a tela. */
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", dispara);
+  } else {
+    dispara();
+  }
+})();
+</script>
+</head>
+<body>
+
+<div class="redir" role="status" aria-live="polite">
+  <img class="redir__mark" src="/assets/img/marca/logo/simbolo-laranja.svg" alt="" width="56" height="56">
+  <div class="redir__spin" aria-hidden="true"></div>
+  <p>
+    <strong>Abrindo a <span class="redir__ios">App Store</span><span class="redir__android">Google Play</span>…</strong>
+    <small>Se nada acontecer em alguns segundos, a página abre sozinha.</small>
+  </p>
+  <a class="redir__out" href="?ver=tudo">Não é o seu aparelho? Ver todas as opções</a>
+</div>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="hdr">
+  <div class="shell hdr__in">
+    <a class="brand" href="/" aria-label="Cartão Hoje — página inicial">
+      <img src="/assets/img/marca/logo/hoje-laranja.svg" alt="Cartão Hoje" width="85" height="50">
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="/#beneficios">Benefícios</a>
+      <a href="/#pedir">Como pedir</a>
+      <a href="/#parceiros">Parceiros</a>
+      <a href="/hoje-pay/">Hoje Pay</a>
+      <a href="/perguntas-frequentes/">Ajuda</a>
+      <a href="/fale-conosco/">Fale conosco</a>
+    </nav>
+    <div class="hdr__cta">
+      <a class="btn btn--sm" href="/baixar-o-app/" aria-current="page">Peça pelo app</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile">
+        <span class="sr">Abrir menu</span><i></i>
+      </button>
+    </div>
+  </div>
+  <div class="mnav" id="menu-mobile">
+    <a href="/#beneficios">Benefícios</a>
+    <a href="/#pedir">Como pedir</a>
+    <a href="/#parceiros">Parceiros</a>
+    <a href="/hoje-pay/">Hoje Pay</a>
+    <a href="/perguntas-frequentes/">Perguntas frequentes</a>
+    <a href="/fale-conosco/">Fale conosco</a>
+    <a class="btn" href="/baixar-o-app/" aria-current="page">Peça pelo app</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="dlhero">
+  <div class="phero__glow" aria-hidden="true"></div>
+  <div class="shell dlhero__in">
+    <nav class="crumbs" aria-label="Trilha de navegação">
+      <ol><li><a href="/">Início</a></li><li>Baixar o app</li></ol>
+    </nav>
+    <p class="eyebrow">Aplicativo</p>
+    <h1 class="h2">Baixe o app do Cartão Hoje</h1>
+    <p class="lead">Escolha o sistema do seu celular — o download é gratuito.</p>
+
+    <div class="dl">
+      <a class="dl__card rv" href="https://apps.apple.com/br/app/hoje-cart%C3%A3o-e-hojepay/id1590552557" target="_blank" rel="noopener" aria-label="Baixar o app do Cartão Hoje na App Store, para iPhone e iPad">
+        <span class="dl__os">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="6" y="2.2" width="12" height="19.6" rx="3.2" stroke="currentColor" stroke-width="2"/><path d="M10.4 4.6h3.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        <h2 class="dl__t">iPhone e iPad</h2>
+        <p class="dl__hint">Baixe na App Store</p>
+        <img class="dl__badge" src="/assets/img/marca/appstore.png" alt="" width="160" height="48">
+      </a>
+
+      <a class="dl__card rv" href="https://play.google.com/store/apps/details?id=com.app.herval.hoje&amp;hl=pt_BR" target="_blank" rel="noopener" aria-label="Baixar o app do Cartão Hoje no Google Play, para Android">
+        <span class="dl__os">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5.6" y="2.2" width="12.8" height="19.6" rx="2.4" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18.4" r="1.15" fill="currentColor"/><path d="M9.4 5.6h5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        <h2 class="dl__t">Android</h2>
+        <p class="dl__hint">Baixe no Google Play</p>
+        <img class="dl__badge" src="/assets/img/marca/googleplay.png" alt="" width="161" height="48">
+      </a>
+      <div class="dl__qr rv">
+        <img src="/assets/img/marca/qr-baixar-o-app.svg" alt="QR code que leva a cartaohoje.com.br/baixar-o-app" width="138" height="138">
+        <div class="dl__qrtxt">
+          <p class="dl__qrt">Ou aponte a câmera do celular</p>
+          <span class="dl__url">cartaohoje.com.br/baixar-o-app</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tinted">
+  <div class="shell">
+    <div class="sec-head rv">
+      <p class="eyebrow">No app</p>
+      <h2 class="h2">O que você resolve pelo celular</h2>
+    </div>
+    <div class="grid cols-3">
+      <article class="card rv">
+        <span class="card__ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="3" stroke="currentColor" stroke-width="2"/><path d="M2.5 10h19" stroke="currentColor" stroke-width="2"/></svg></span>
+        <h3 class="h4">Fatura, limite e extrato</h3>
+        <p>Consulte, pague e acompanhe seus gastos quando quiser.</p>
+      </article>
+      <article class="card rv">
+        <span class="card__ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="3" stroke="currentColor" stroke-width="2"/><path d="M7 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16.5" cy="9.5" r="1.6" stroke="currentColor" stroke-width="2"/></svg></span>
+        <h3 class="h4">Cartão virtual</h3>
+        <p>Para comprar online com mais segurança.</p>
+      </article>
+      <article class="card rv">
+        <span class="card__ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.6" stroke="currentColor" stroke-width="2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <h3 class="h4">Bloqueio e desbloqueio na hora</h3>
+        <p>Perdeu, esqueceu ou suspeita de fraude? Resolve pelo app.</p>
+      </article>
+    </div>
+    <div class="btn-row mt-l">
+      <a class="btn btn--ghost" href="/perguntas-frequentes/">Tenho dúvidas sobre o app</a>
+      <a class="btn btn--ghost" href="/fale-conosco/">Falar com o atendimento</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="ft">
+  <div class="shell">
+    <div class="ft__grid">
+      <div class="ft__brand">
+        <img src="/assets/img/marca/logo/hoje-laranja.svg" alt="Cartão Hoje" width="95" height="56">
+        <p class="small">O Cartão Hoje é um cartão de crédito com benefícios exclusivos que proporciona segurança e praticidade para suas compras.</p>
+        <div class="ft__soc">
+          <a href="https://www.instagram.com/hojebr_/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.4" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4.1" stroke="currentColor" stroke-width="1.9"/><circle cx="17.1" cy="6.9" r="1.15" fill="currentColor"/></svg></a>
+          <a href="https://www.youtube.com/@cartaohoje" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.2" y="5.4" width="19.6" height="13.2" rx="4.4" stroke="currentColor" stroke-width="1.9"/><path d="m10.3 9.1 5.1 2.9-5.1 2.9V9.1Z" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/cartaohoje" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.4" stroke="currentColor" stroke-width="1.9"/><path d="M13.9 21v-6.7h2.2l.42-2.62H13.9V9.98c0-.76.21-1.28 1.3-1.28h1.39V6.36c-.24-.03-1.07-.1-2.03-.1-2.01 0-3.38 1.23-3.38 3.48v1.94H8.96v2.62h2.22V21h2.72Z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Cartão Hoje</h4>
+        <ul>
+          <li><a href="/#beneficios">Benefícios</a></li>
+          <li><a href="/#pedir">Como pedir</a></li>
+          <li><a href="/#parceiros">Parceiros</a></li>
+          <li><a href="/hoje-pay/">Hoje Pay</a></li>
+          <li><a href="/baixar-o-app/" aria-current="page">Baixe o app</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="/perguntas-frequentes/">Perguntas frequentes</a></li>
+          <li><a href="/fale-conosco/">Fale conosco</a></li>
+          <li><a href="/trabalhe-conosco/">Trabalhe conosco</a></li>
+          <li><a href="tel:08006487070">Ouvidoria: 0800 648 7070</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Documentos</h4>
+        <ul>
+          <li><a href="/assets/docs/clausulas-gerais-do-contrato.pdf" target="_blank" rel="noopener">Cláusulas gerais do contrato</a></li>
+          <li><a href="/assets/docs/proposta-de-adesao-ao-cartao.pdf" target="_blank" rel="noopener">Proposta de adesão ao cartão</a></li>
+          <li><a href="/assets/docs/tarifas-cartao-hoje.pdf" target="_blank" rel="noopener">Tarifas do Cartão Hoje</a></li>
+          <li><a href="/assets/docs/termos-de-uso-do-app.pdf" target="_blank" rel="noopener">Termos de uso do app</a></li>
+          <li><a href="/assets/docs/termo-de-adesao-hojepay-plus.pdf" target="_blank" rel="noopener">Termo de adesão do Hoje Pay PLUS</a></li>
+          <li><a href="/politica-de-privacidade/">Política de privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ft__legal">
+      <p>Cartão Hoje é uma empresa do Grupo Herval. Todos os direitos reservados. Crédito sujeito a análise e aprovação. Mensalidade de R$ 12,90. Consulte as condições completas no contrato e na tabela de tarifas.</p>
+      <div class="ft__co">
+        <a href="https://www.herval.com.br/" target="_blank" rel="noopener" aria-label="Site do Grupo Herval"><img src="/assets/img/marca/grupo-herval.png" alt="Grupo Herval" width="167" height="80" loading="lazy"></a>
+        <a href="https://hsfinanceira.com.br/" target="_blank" rel="noopener" aria-label="Site da HS Financeira"><img src="/assets/img/marca/hs-financeira.png" alt="HS Financeira" width="180" height="71" loading="lazy"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/hoje.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cartaohoje.com.br/#organizacao",
+      "name": "Cartão Hoje",
+      "alternateName": [
+        "Hoje",
+        "Cartão Hoje HS Financeira"
+      ],
+      "legalName": "HS Financeira S.A. — Crédito, Financiamento e Investimento",
+      "description": "Emissora do Cartão Hoje, cartão de crédito Visa internacional solicitado pelo aplicativo, sem necessidade de abrir conta em banco. A HS Financeira é a instituição financeira do Grupo Herval.",
+      "url": "https://cartaohoje.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://cartaohoje.com.br/#logo",
+        "url": "https://cartaohoje.com.br/assets/img/marca/logo-hoje.png",
+        "contentUrl": "https://cartaohoje.com.br/assets/img/marca/logo-hoje.png",
+        "width": 512,
+        "height": 301,
+        "caption": "Cartão Hoje"
+      },
+      "image": {
+        "@id": "https://cartaohoje.com.br/#logo"
+      },
+      "slogan": "O amanhã começa hoje",
+      "naics": "522210",
+      "taxID": "07.512.441/0001-11",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "CNPJ",
+          "value": "07.512.441/0001-11"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "BR-116, nº 7070, Sala 14, Portal da Serra",
+        "addressLocality": "Dois Irmãos",
+        "addressRegion": "RS",
+        "postalCode": "93950-000",
+        "addressCountry": "BR"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "knowsLanguage": "pt-BR",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Grupo Herval",
+        "url": "https://www.herval.com.br/",
+        "foundingDate": "1959"
+      },
+      "sameAs": [
+        "https://www.instagram.com/hojebr_/",
+        "https://www.youtube.com/@cartaohoje",
+        "https://www.facebook.com/cartaohoje",
+        "https://hsfinanceira.com.br/"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-800-400-6680",
+          "contactType": "customer service",
+          "name": "Central de Atendimento 24 horas",
+          "areaServed": "BR",
+          "availableLanguage": "Portuguese",
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-800-602-2202",
+          "contactType": "customer support",
+          "name": "Serviço de Atendimento ao Cliente",
+          "areaServed": "BR",
+          "availableLanguage": "Portuguese",
+          "hoursAvailable": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "08:00",
+              "closes": "20:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "08:00",
+              "closes": "18:00"
+            }
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-51-4042-1377",
+          "contactType": "customer support",
+          "name": "WhatsApp",
+          "areaServed": "BR",
+          "availableLanguage": "Portuguese",
+          "url": "https://wa.me/555140421377"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-800-648-7070",
+          "contactType": "complaints",
+          "name": "Ouvidoria",
+          "areaServed": "BR",
+          "availableLanguage": "Portuguese"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cartaohoje.com.br/#site",
+      "url": "https://cartaohoje.com.br/",
+      "name": "Cartão Hoje",
+      "description": "Site oficial do Cartão Hoje, cartão de crédito Visa internacional da HS Financeira.",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://cartaohoje.com.br/#organizacao"
+      }
+    },
+    {
+      "@type": [
+        "CreditCard",
+        "FinancialProduct",
+        "Product"
+      ],
+      "@id": "https://cartaohoje.com.br/#cartao-hoje",
+      "name": "Cartão Hoje",
+      "description": "Cartão de crédito Visa internacional solicitado pelo aplicativo, com resposta da análise em poucos minutos e sem necessidade de abrir conta em banco. Oferece até 40 dias para pagar, parcelamento em até 24x iguais, pagamento por aproximação e cartão virtual no app.",
+      "url": "https://cartaohoje.com.br/",
+      "image": "https://cartaohoje.com.br/assets/img/og/home.jpg",
+      "category": "Cartão de crédito",
+      "provider": {
+        "@id": "https://cartaohoje.com.br/#organizacao"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "contactlessPayment": true,
+      "feesAndCommissionsSpecification": "https://cartaohoje.com.br/assets/docs/tarifas-cartao-hoje.pdf",
+      "termsOfService": "https://cartaohoje.com.br/assets/docs/clausulas-gerais-do-contrato.pdf",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bandeira",
+          "value": "Visa"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Abrangência",
+          "value": "Internacional — aceito no Brasil e no exterior"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Mensalidade",
+          "value": "R$ 12,90"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Prazo para pagar",
+          "value": "Até 40 dias"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Parcelamento",
+          "value": "Até 24x iguais"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Pagamento por aproximação",
+          "value": "Sim"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cartão virtual no app",
+          "value": "Sim"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Necessita conta em banco",
+          "value": "Não"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Idade mínima",
+          "value": "18 anos"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Renda mínima",
+          "value": "1 salário mínimo"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Canal de solicitação",
+          "value": "Aplicativo Hoje, para iPhone e Android"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Prazo da análise de crédito",
+          "value": "Poucos minutos"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Nova tentativa após recusa",
+          "value": "90 dias"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://cartaohoje.com.br/baixar-o-app/",
+        "price": "12.90",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Brasil"
+        },
+        "seller": {
+          "@id": "https://cartaohoje.com.br/#organizacao"
+        },
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "12.90",
+          "priceCurrency": "BRL",
+          "name": "Mensalidade",
+          "billingIncrement": 1,
+          "unitCode": "MON",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://cartaohoje.com.br/baixar-o-app/#trilha",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://cartaohoje.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Baixar o app",
+          "item": "https://cartaohoje.com.br/baixar-o-app/"
+        }
+      ]
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://cartaohoje.com.br/#app",
+      "name": "Hoje — Cartão e HojePay",
+      "alternateName": "App Cartão Hoje",
+      "description": "Aplicativo do Cartão Hoje: peça o cartão, acompanhe a fatura e o limite, gere cartão virtual, bloqueie e desbloqueie o cartão e pague com o Hoje Pay.",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "iOS, Android",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://cartaohoje.com.br/#organizacao"
+      },
+      "downloadUrl": [
+        "https://apps.apple.com/br/app/hoje-cart%C3%A3o-e-hojepay/id1590552557",
+        "https://play.google.com/store/apps/details?id=com.app.herval.hoje&hl=pt_BR"
+      ],
+      "installUrl": "https://cartaohoje.com.br/baixar-o-app/",
+      "featureList": [
+        "Pedido do cartão pelo celular",
+        "Fatura e limite",
+        "Cartão virtual",
+        "Bloqueio e desbloqueio",
+        "Hoje Pay"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cartaohoje.com.br/baixar-o-app/#pagina",
+      "url": "https://cartaohoje.com.br/baixar-o-app/",
+      "name": "Baixar o app | Cartão Hoje para iPhone e Android",
+      "description": "Baixe o app do Cartão Hoje no iPhone ou no Android. Peça seu cartão, acompanhe a fatura, consulte o limite e pague com o Hoje Pay pelo celular.",
+      "isPartOf": {
+        "@id": "https://cartaohoje.com.br/#site"
+      },
+      "about": {
+        "@id": "https://cartaohoje.com.br/#cartao-hoje"
+      },
+      "inLanguage": "pt-BR",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cartaohoje.com.br/assets/img/og/baixar-o-app.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-14",
+      "publisher": {
+        "@id": "https://cartaohoje.com.br/#organizacao"
+      },
+      "breadcrumb": {
+        "@id": "https://cartaohoje.com.br/baixar-o-app/#trilha"
+      },
+      "mainEntity": {
+        "@id": "https://cartaohoje.com.br/#app"
+      }
+    }
+  ]
+}
+</script>
+</body>
+</html>

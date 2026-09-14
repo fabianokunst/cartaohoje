@@ -64,3 +64,22 @@ cartão físico. Deve ser conferida com o time de marca antes da publicação.
 
 - **Protótipo:** [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) — SIL Open Font License, gratuita.
 - **Produção:** Gilroy (Radomir Tinkov), fonte da marca — requer licença web e self-host.
+
+## Documentos (`assets/docs/`)
+
+Os cinco PDFs contratuais foram **baixados do site atual e passam a viver dentro do projeto**,
+porque `cartaohoje.com.br` será desligado quando este site entrar no ar. Nenhuma página
+aponta mais para `cartaohoje.com.br/wp-content/uploads/`.
+
+| Arquivo | Origem no site atual | Onde aparece |
+|---|---|---|
+| `clausulas-gerais-do-contrato.pdf` | `2021/05/Clausulas_Gerais_do_Contrato_de_Utilizacao_dos_Cartoes_HS_Financeira_21.01.21.pdf` | Transparência (home), Documentos (Hoje Pay), rodapé |
+| `proposta-de-adesao-ao-cartao.pdf` | `2024/09/Proposta-de-adesao-ao-Cartao-de-Credito.pdf` | Transparência (home), rodapé |
+| `tarifas-cartao-hoje.pdf` | `2024/10/Tarifas_2.pdf` | Transparência (home), rodapé |
+| `termos-de-uso-do-app.pdf` | `2022/12/Termo-de-Uso-do-APP.pdf` | Transparência (home), Documentos (Hoje Pay), rodapé |
+| `termo-de-adesao-hojepay-plus.pdf` | `2024/10/Termo_adesao_HojePayPLUS.pdf` | Documentos (Hoje Pay), rodapé |
+
+O site atual ainda linka uma tabela de tarifas de 2023 (`Tabela-de-Tarifas-Cartao-Hoje.pdf`)
+que **retorna 404**. Usamos a versão de 2024, que é a que funciona.
+
+**Antes do go-live:** confirmar com o Jurídico se estas são as versões vigentes de cada documento.

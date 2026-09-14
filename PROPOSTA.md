@@ -121,7 +121,7 @@ O site hoje disputa basicamente a busca pela própria marca. As buscas que traze
 | "cartão de crédito para negativado / com renda baixa" | Página de elegibilidade, honesta sobre a análise |
 | "cartão de crédito anuidade barata" | Página de tarifas e custos |
 | "como pedir cartão de crédito pelo celular" | Guia passo a passo |
-| "cartão taQi / cartão Volis / cartão iPlace" | Uma página por parceiro |
+| "cartão taQi / cartão volis / cartão iPlace" | Uma página por parceiro |
 | Dúvidas de uso ("como desbloquear", "segunda via fatura") | Já cobertas pelo FAQ — falta marcação e páginas individuais |
 
 Sugestão: **uma página por dúvida de alto volume**, além do FAQ agregado. Cada uma vira porta de entrada.
@@ -141,7 +141,7 @@ Sugestão: **uma página por dúvida de alto volume**, além do FAQ agregado. Ca
 /cartao-hoje/            O cartão: benefícios, limites, como funciona   [nova]
 /como-pedir/             Passo a passo + elegibilidade                  [nova]
 /tarifas/                Custos, mensalidade, contratos                 [nova]
-/parceiros/              taQi · Volis · iPlace · voulevar               [nova]
+/parceiros/              taQi · volis · iPlace · voulevar               [nova]
   /parceiros/taqi/       …uma por parceiro                             [nova]
 /hoje-pay/               Carteira digital
 /app/                    Página do aplicativo                           [nova]
@@ -174,7 +174,7 @@ Todo o texto veio do site atual, reescrito para ficar mais direto. Nada foi inve
 ### Imagens
 
 Fotos gratuitas do Unsplash, como combinado — ver `CREDITOS.md`. São **placeholders**: a versão final deveria usar banco de imagens próprio ou produção fotográfica, com pessoas que representem o público do cartão.
-Os logos (hoje, taQi, Volis, iPlace, voulevar, Grupo Herval, HS Financeira) e a imagem do cartão + app são os oficiais, extraídos do site atual.
+Os logos (hoje, taQi, volis, iPlace, voulevar, Grupo Herval, HS Financeira) e a imagem do cartão + app são os oficiais, extraídos do site atual.
 
 ---
 
