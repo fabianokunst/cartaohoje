@@ -1,0 +1,10 @@
+# Normaliza quebra de linha: LF no repositório, nativo no working copy.
+* text=auto eol=lf
+
+# Binários — nunca converter.
+*.png binary
+*.jpg binary
+*.webp binary
+*.pdf binary
+*.docx binary
+*.ico binary

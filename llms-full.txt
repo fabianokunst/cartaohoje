@@ -1,0 +1,850 @@
+# Cartão Hoje — conteúdo integral do site
+
+Todas as páginas de https://cartaohoje.com.br em Markdown, extraídas do HTML publicado.
+Gerado por tools/gerar-llms.py. Não edite este arquivo à mão.
+
+==============================================================================
+
+# Home
+
+URL: https://cartaohoje.com.br/
+
+Cartão de crédito Visa internacional
+
+## O amanhã começa hoje
+
+Peça pelo app, receba a resposta da análise em poucos minutos e comece a usar. Sem precisar abrir conta em banco, sem fila e sem papelada.
+
+[Baixe o app](https://cartaohoje.com.br/baixar-o-app/) Ver benefícios
+
+- Resposta em poucos minutos
+
+- Brasil e exterior
+
+- Até 40 dias para pagar
+
+[imagem: Jovem sorrindo, apoiada em uma mesa de café]
+
+**24x** parcelas iguais
+
+Emissão **HS Financeira**
+
+Bandeira **Visa internacional**
+
+**Grupo Herval**, desde 1959
+
+**20 marcas** em todo o Brasil
+
+Benefícios
+
+### Feito para caber no seu mês
+
+Um cartão de crédito simples de entender: prazo para pagar, parcela que não muda de valor e aceitação em qualquer lugar que receba Visa.
+
+#### Até 40 dias para pagar
+
+Fôlego no caixa entre a data da compra e o vencimento da fatura, sem custo adicional.
+
+#### Parcele em até 24x iguais
+
+Parcelas do mesmo valor do começo ao fim, nas lojas parceiras. Sem surpresa na fatura.
+
+#### Pagamento por aproximação
+
+Aproxime o cartão da maquininha e pronto. Mais rápido na fila, sem tirar o cartão da mão.
+
+#### Compras no Brasil e no exterior
+
+Cartão Visa internacional, aceito em milhões de estabelecimentos físicos e em lojas online.
+
+#### Cartão virtual no app
+
+Gere um cartão virtual para comprar online com mais segurança, sem expor o número do físico.
+
+#### Ofertas exclusivas
+
+Condições especiais nas lojas taQi, volis Colchões, iPlace e voulevar — só para quem tem o Hoje.
+
+Como pedir
+
+### Três passos, alguns minutos
+
+Todo o processo acontece dentro do app. Você não precisa ir a uma loja nem abrir conta em banco.
+
+#### Baixe o app Hoje
+
+Gratuito para iPhone e Android.
+
+#### Preencha seus dados
+
+Nome, CPF, data de nascimento e renda. Na sequência, uma foto do documento de identificação (RG ou CNH), frente e verso.
+
+#### Receba a resposta
+
+A análise leva poucos minutos. Você recebe uma notificação no celular e acompanha tudo pelo app.
+
+**Quem pode pedir:** qualquer pessoa física com mais de 18 anos e renda superior a 1 salário mínimo. Comprovante de renda e de endereço são opcionais.
+
+[imagem: Mão aproximando um cartão de crédito da maquininha]
+
+Rede de parceiros
+
+### Benefícios e condições especiais nas lojas do grupo
+
+Para você realizar hoje seus planos de reformar ou mobiliar a casa, investir no seu bem-estar ou ter um iPhone de última geração.
+
+[imagem: Sala de estar clara e moderna] taQi Reforme e mobilie sua casa Móveis, eletro e tecnologia com parcelamento estendido nas Lojas taQi.
+
+[imagem: Quarto com cama arrumada e luz natural] volis Colchões Invista no seu bem-estar Colchões e artigos de descanso com condições exclusivas para quem tem o Hoje.
+
+[[imagem: iPhone sobre superfície neutra] iPlace iPhone de última geração Condições diferenciadas na compra de aparelhos Apple, com o Hoje Pay na iPlace.](https://cartaohoje.com.br/hoje-pay/)
+
+[[imagem: Lojas taQi]](https://www.taqi.com.br/) [[imagem: voulevar]](https://www.voulevar.com.br/) [[imagem: volis Colchões]](https://www.volis.com.br/) [[imagem: iPlace]](https://www.iplace.com.br/)
+
+[imagem: Três modelos de iPhone 17 nas cores prata, laranja e azul]
+
+Novidade
+
+### Hoje Pay: sua compra na iPlace com o cartão que você já tem
+
+A carteira digital dentro do app do Cartão Hoje. Com um cartão de crédito elegível — Bradesco, Banco do Brasil ou BTG Pactual — você compra aparelhos Apple na iPlace com condições diferenciadas, sem precisar abrir conta.
+
+[Como funciona o Hoje Pay](https://cartaohoje.com.br/hoje-pay/)
+
+Aplicativo Hoje
+
+### Seu cartão inteiro cabe no celular
+
+Do pedido ao desbloqueio, da fatura ao cartão virtual. Tudo em um app leve, gratuito e disponível 24 horas.
+
+- **Peça o cartão** Solicitação 100% digital, com resposta em poucos minutos.
+
+- **Fatura, limite e extrato** Consulte, pague e acompanhe seus gastos quando quiser.
+
+- **Cartão virtual** Para comprar online com mais segurança.
+
+- **Bloqueio e desbloqueio na hora** Perdeu, esqueceu ou suspeita de fraude? Resolve pelo app.
+
+[[imagem: Baixar na App Store]](https://apps.apple.com/br/app/hoje-cart%C3%A3o-e-hojepay/id1590552557) [[imagem: Disponível no Google Play]](https://play.google.com/store/apps/details?id=com.app.herval.hoje&hl=pt_BR)
+
+[imagem: Cartão Hoje e o aplicativo aberto no celular]
+
+Transparência
+
+### Sem letra miúda: você sabe quanto custa
+
+Contratos, tarifas e termos ficam abertos aqui, no mesmo lugar. Consulte antes de pedir.
+
+**R$ 12,90** mensalidade do Cartão Hoje
+
+- [**Cláusulas gerais do contrato** Contrato de utilização dos cartões da HS Financeira: regras de uso, encargos, limites e cancelamento. PDF, 643 KB.](https://cartaohoje.com.br/assets/docs/clausulas-gerais-do-contrato.pdf)
+
+- [**Proposta de adesão ao cartão** Formulário que você assina ao pedir o cartão, com as características da operação contratada. PDF, 229 KB.](https://cartaohoje.com.br/assets/docs/proposta-de-adesao-ao-cartao.pdf)
+
+- [**Tarifas do Cartão Hoje** Tabela completa com o valor de cada tarifa cobrada e quando ela se aplica. PDF, 817 KB.](https://cartaohoje.com.br/assets/docs/tarifas-cartao-hoje.pdf)
+
+- [**Termos de uso do app** Condições de uso do aplicativo “Hoje - Cartão e HojePay”. PDF, 127 KB.](https://cartaohoje.com.br/assets/docs/termos-de-uso-do-app.pdf)
+
+Dúvidas frequentes
+
+### As perguntas que mais recebemos
+
+### Quem pode solicitar o Cartão Hoje?
+
+Qualquer pessoa física com mais de 18 anos e renda superior a 1 salário mínimo.
+
+### Qual o prazo de avaliação depois que eu peço pelo app?
+
+O retorno da análise chega em poucos minutos. Se o pedido ficar pendente, basta reenviar os documentos solicitados pelo próprio app.
+
+### Quais documentos são obrigatórios?
+
+Apenas um documento de identificação — carteira de identidade (emitida há até 10 anos e em boas condições) ou CNH válida — com foto da frente e do verso. Comprovante de endereço e de renda são opcionais.
+
+### Qual a bandeira e onde posso usar?
+
+O Cartão Hoje é Visa e internacional: aceito em milhares de estabelecimentos no Brasil e no mundo, físicos e online. Também é possível gerar um cartão virtual pelo app.
+
+### Há cobrança de anuidade?
+
+O Cartão Hoje tem cobrança mensal de R$ 12,90.
+
+### Como desbloqueio meu cartão?
+
+Pelo app Hoje, que é o caminho mais rápido, ou pela Central de Atendimento Eletrônica: 3003 6680 (capitais e regiões metropolitanas) e 0800 400 6680 (demais localidades).
+
+### Perdi meu cartão. Como bloqueio?
+
+Pelo app Hoje, a qualquer hora, ou pela Central de Atendimento 24 horas: 3003 6680 / 0800 400 6680.
+
+### Minha fatura está em atraso. Com quem falo?
+
+Fale com a gente pelo WhatsApp [(51) 4042 1377](https://wa.me/555140421377), de segunda a sexta das 8h às 20h e aos sábados das 8h às 18h.
+
+[Ver todas as perguntas frequentes](https://cartaohoje.com.br/perguntas-frequentes/)
+
+Atendimento
+
+### Fale com a gente
+
+#### Central 24 horas
+
+Desbloqueio, bloqueio por perda ou roubo, limite disponível e segunda via de fatura.
+
+**3003 6680 ** capitais e regiões metropolitanas **0800 400 6680 ** demais localidades
+
+#### Atendimento ao cliente
+
+Segunda a sexta, das 8h às 20h. Sábados, das 8h às 18h.
+
+**4020 2202 ** capitais e regiões metropolitanas **0800 602 2202 ** demais localidades
+
+#### WhatsApp
+
+Segunda via de fatura, negociação e dúvidas do dia a dia.
+
+**[(51) 4042 1377](https://wa.me/555140421377) ** seg. a sex. 8h–20h · sáb. 8h–18h
+
+#### Ouvidoria
+
+Já falou com a HS Financeira e não resolveu? A ouvidoria é o próximo passo.
+
+**0800 648 7070 ** seg. a sex. 8h–12h e 13h30–15h
+
+[imagem: Família reunida ao ar livre]
+
+Quem está por trás
+
+### Uma empresa do Grupo Herval
+
+Fundado em 1959, com sede em Dois Irmãos (RS), o Grupo Herval está presente em todas as regiões do país. São 20 marcas em indústria, comércio e serviços — entre elas a HS Financeira, responsável pelo Cartão Hoje.
+
+[[imagem: Grupo Herval]](https://www.herval.com.br/) [[imagem: HS Financeira]](https://hsfinanceira.com.br/)
+
+### Peça seu Cartão Hoje direto pelo app
+
+Baixe gratuitamente, preencha seus dados e receba a resposta em poucos minutos.
+
+[Baixar o app](https://cartaohoje.com.br/baixar-o-app/) [Tenho dúvidas](https://cartaohoje.com.br/perguntas-frequentes/)
+
+==============================================================================
+
+# Baixar o app
+
+URL: https://cartaohoje.com.br/baixar-o-app/
+
+Aplicativo
+
+## Baixe o app do Cartão Hoje
+
+Escolha o sistema do seu celular — o download é gratuito.
+
+[iPhone e iPad Baixe na App Store](https://apps.apple.com/br/app/hoje-cart%C3%A3o-e-hojepay/id1590552557)
+
+[Android Baixe no Google Play](https://play.google.com/store/apps/details?id=com.app.herval.hoje&hl=pt_BR)
+
+[imagem: QR code que leva a cartaohoje.com.br/baixar-o-app]
+
+Ou aponte a câmera do celular
+
+cartaohoje.com.br/baixar-o-app
+
+No app
+
+### O que você resolve pelo celular
+
+#### Fatura, limite e extrato
+
+Consulte, pague e acompanhe seus gastos quando quiser.
+
+#### Cartão virtual
+
+Para comprar online com mais segurança.
+
+#### Bloqueio e desbloqueio na hora
+
+Perdeu, esqueceu ou suspeita de fraude? Resolve pelo app.
+
+[Tenho dúvidas sobre o app](https://cartaohoje.com.br/perguntas-frequentes/) [Falar com o atendimento](https://cartaohoje.com.br/fale-conosco/)
+
+==============================================================================
+
+# Hoje Pay
+
+URL: https://cartaohoje.com.br/hoje-pay/
+
+Novidade
+
+[imagem: Hoje Pay]
+
+## Seu iPhone novo, com uma nova forma de comprar
+
+Com o Hoje Pay, você pode utilizar seu cartão de crédito elegível para realizar a compra de aparelhos Apple participantes do programa, com condições diferenciadas.
+
+Ver o passo a passo Simule e compre
+
+[imagem: Três modelos de iPhone 17 nas cores prata, laranja e azul]
+
+### Cartões aceitos
+
+Para utilizar o Hoje Pay, você pode cadastrar um cartão de crédito elegível dos seguintes bancos:
+
+- [imagem: Bradesco]
+
+- [imagem: Banco do Brasil]
+
+- [imagem: BTG Pactual]
+
+O cartão precisa estar válido e possuir limite disponível para realizar a operação.
+
+O que é
+
+### Um jeito novo de pagar, dentro de um app que você já tem
+
+O Hoje Pay é uma carteira digital integrada ao aplicativo do Cartão Hoje. Você cadastra um cartão de crédito elegível e usa as condições diferenciadas da parceria com a iPlace na hora de fechar a compra.
+
+#### Sem abrir conta
+
+Você não precisa de conta bancária nova nem de mudar de banco para aproveitar a condição.
+
+#### Condição diferenciada na iPlace
+
+Preço e parcelamento especiais na compra de aparelhos Apple participantes do programa.
+
+#### Tudo sem sair de casa
+
+Do cadastro do cartão ao checkout, a compra acontece de forma rápida e segura pelo app e pelo site da iPlace.
+
+Como utilizar?
+
+### Como funciona o Hoje Pay
+
+Confira o passo a passo completo para realizar sua compra de forma rápida, segura e sem sair de casa.
+
+#### Baixe o app do Cartão Hoje
+
+Disponível gratuitamente na App Store e no Google Play.
+
+#### Crie sua conta digital e faça login
+
+Cadastro rápido, direto no aplicativo.
+
+#### Selecione “Hoje Pay — Pagamentos”
+
+A opção fica no menu principal do app.
+
+#### Cadastre seu cartão de crédito
+
+Adicione um cartão de crédito elegível: Bradesco, Banco do Brasil ou BTG Pactual.
+
+#### Inicie sua compra no site da iPlace
+
+Agora que seu cartão está configurado no Hoje Pay, você já pode fazer sua compra na [iPlace](https://www.iplace.com.br/iplace-club-compra?utm_campaign=bradesco) com condições especiais.
+
+#### Escolha seu aparelho e a forma de pagamento
+
+Selecione o modelo desejado e escolha o Hoje Pay como forma de pagamento para finalizar sua compra.
+
+[imagem: Tela de formas de compra no site da iPlace, com a opção Hoje Pay entre os programas de parcelamento]
+
+Imagem ilustrativa. Valores e condições variam conforme o produto e a análise do seu cartão.
+
+Depois da compra
+
+### Acompanhe seu pedido pelo app
+
+Após finalizar sua compra no site, você poderá acompanhar todos os detalhes e informações do seu pedido diretamente pelo seu aplicativo do Hoje.
+
+Transparência
+
+### Leia o contrato antes de fechar a compra
+
+As compras financiadas na modalidade Hoje Pay PLUS têm contrato próprio, que define o credor, o valor e os encargos. Ele fica aberto aqui, para você ler antes de decidir. Os demais documentos do Cartão Hoje estão no rodapé desta página.
+
+- [**Termo de adesão do Hoje Pay PLUS** Termo de adesão para aquisição de bens de consumo (CDC) com a HS Financeira, aplicado às compras financiadas na modalidade Hoje Pay PLUS. PDF, 157 KB.](https://cartaohoje.com.br/assets/docs/termo-de-adesao-hojepay-plus.pdf)
+
+- [**Cláusulas gerais do contrato** Contrato de utilização dos cartões da HS Financeira: regras de uso, encargos, limites e cancelamento. PDF, 643 KB.](https://cartaohoje.com.br/assets/docs/clausulas-gerais-do-contrato.pdf)
+
+- [**Termos de uso do app** Condições de uso do aplicativo “Hoje - Cartão e HojePay”, onde o Hoje Pay funciona. PDF, 127 KB.](https://cartaohoje.com.br/assets/docs/termos-de-uso-do-app.pdf)
+
+### Seu próximo produto Apple está aqui.
+
+Agora que você conhece o Hoje Pay, simule sua compra e escolha o aparelho que mais combina com você.
+
+**Importante:** configure o app “Hoje - Cartão e HojePay” antes de fazer sua compra na iPlace.
+
+[Simule e compre](https://www.iplace.com.br/iplace-club-compra?utm_campaign=bradesco) [Tenho dúvidas](https://cartaohoje.com.br/perguntas-frequentes/)
+
+==============================================================================
+
+# Perguntas frequentes
+
+URL: https://cartaohoje.com.br/perguntas-frequentes/
+
+Central de ajuda
+
+## Perguntas frequentes
+
+Reunimos aqui as dúvidas que mais chegam ao nosso atendimento. Se a sua não estiver na lista, [fale com a gente](https://cartaohoje.com.br/fale-conosco/).
+
+### Solicitação e aprovação
+
+Como pedir o cartão e o que acontece depois.
+
+### Qual o prazo de avaliação após solicitar pelo app?
+
+O cliente recebe o retorno da análise em poucos minutos. Caso a solicitação fique pendenciada, será necessário reenviar os documentos adicionais indicados no app.
+
+### Quem pode solicitar o Cartão Hoje?
+
+Qualquer pessoa física, com mais de 18 anos e com renda superior a 1 salário mínimo.
+
+### Quais dados são obrigatórios na solicitação?
+
+Na primeira etapa, dados pessoais e de renda:
+
+- Nome completo
+
+- CPF
+
+- Data de nascimento
+
+- Renda
+
+Na etapa seguinte, o documento de identificação e o endereço.
+
+### Como sei se meu cartão foi aprovado?
+
+Você recebe uma notificação no celular e pode acompanhar o andamento diretamente pelo app.
+
+### Minha solicitação foi reprovada. Posso tentar de novo?
+
+Sim. Após 90 dias você poderá solicitar uma nova análise.
+
+### Por que fui negado se não tenho restrições no meu nome?
+
+Nossa análise de crédito não se restringe apenas à consulta de restrições: outros fatores são considerados na decisão.
+
+### Documentação
+
+O que enviar e em quais formatos.
+
+### Quais documentos são obrigatórios?
+
+Apenas o documento de identificação — carteira de identidade ou CNH — com foto da frente e do verso. Comprovante de endereço e de renda são opcionais.
+
+### Quais documentos de identificação são aceitos?
+
+Carteira de identidade em boas condições, com emissão de até 10 anos; ou CNH válida.
+
+### Qual comprovante de residência é aceito?
+
+Contas com emissão de até 120 dias: água, luz, telefone, gás, internet ou cartão de crédito.
+
+### Como faço para comprovar minha renda?
+
+Contracheque, recibo de Imposto de Renda ou fatura de cartão de crédito, com emissão de até dois meses.
+
+### O cartão e seu uso
+
+Bandeira, aceitação e custo.
+
+### Qual a bandeira do cartão e onde posso usar?
+
+A bandeira é Visa e o cartão é internacional, ou seja, é aceito em milhares de estabelecimentos no Brasil e no mundo.
+
+### Posso usar em qualquer lugar?
+
+Sim, em estabelecimentos que aceitam Visa, físicos e eletrônicos. Também é possível gerar um cartão virtual pelo app para compras online.
+
+### Há cobrança de anuidade?
+
+Sim. O Cartão Hoje possui uma cobrança mensal no valor de R$ 12,90.
+
+### Desbloqueio, bloqueio e segunda via
+
+O que fazer em cada situação.
+
+### Como desbloquear o cartão?
+
+Preferencialmente pelo app, ou pela Central de Atendimento Eletrônica: 3003 6680 e 0800 400 6680.
+
+### Como bloquear o cartão por perda ou roubo?
+
+Pelo app Hoje ou pelos telefones de atendimento: 4020 2202 e 0800 602 2202.
+
+### Como solicito a segunda via do cartão?
+
+Entre em contato com o Serviço de Atendimento: 4020 2202 ou 0800 602 2202, de segunda a sexta das 8h às 20h e aos sábados das 8h às 18h.
+
+### Perdi minha senha. Como solicito uma segunda via?
+
+Pelo Serviço de Atendimento: 4020 2202 ou 0800 602 2202, de segunda a sexta das 8h às 20h e aos sábados das 8h às 18h.
+
+### Meu cartão está bloqueado. Por quê?
+
+Entre em contato com o Serviço de Atendimento para verificar o motivo do bloqueio.
+
+### Fatura e transações
+
+Cobranças, contestações e negociação.
+
+### Como contesto uma compra que não reconheço?
+
+A contestação pode ser realizada através do Serviço de Atendimento ao Cliente. Depois, você acompanha o andamento pelo app.
+
+### Minha fatura está em atraso. O que faço?
+
+Fale com a gente pelo WhatsApp [(51) 4042 1377](https://wa.me/555140421377), de segunda a sexta das 8h às 20h e aos sábados das 8h às 18h.
+
+### Como obtenho a segunda via da fatura?
+
+Disponível no app ou pelo WhatsApp [(51) 4042 1377](https://wa.me/555140421377).
+
+### Dados e acesso ao app
+
+Atualização cadastral e problemas de login.
+
+### Como atualizo meus dados (endereço, telefone, e-mail)?
+
+Pelo app Hoje ou pelo Serviço de Atendimento: 4020 2202 / 0800 602 2202.
+
+### Não consigo acessar o app. O que pode ser?
+
+O acesso pode estar desabilitado por um destes motivos:
+
+- Cancelamento do cartão
+
+- Solicitação de exclusão de dados (LGPD)
+
+- Suspeita de fraude
+
+- Erros consecutivos de senha
+
+Entre em contato com o atendimento para regularizar.
+
+### Não encontrou sua resposta?
+
+Nosso time atende por telefone e WhatsApp, de segunda a sábado.
+
+[Fale conosco](https://cartaohoje.com.br/fale-conosco/) [WhatsApp (51) 4042 1377](https://wa.me/555140421377)
+
+==============================================================================
+
+# Fale conosco
+
+URL: https://cartaohoje.com.br/fale-conosco/
+
+Atendimento
+
+## Fale conosco
+
+Escolha o canal abaixo. Desbloqueio, segunda via de fatura, limite e cartão virtual também se resolvem em segundos pelo app.
+
+### Central de Atendimento 24 horas
+
+Para desbloquear seu cartão, bloquear por perda, roubo ou suspeita de fraude, consultar limite disponível, segunda via e detalhamento da fatura.
+
+**3003 6680 ** capitais e regiões metropolitanas **0800 400 6680 ** outras localidades
+
+### Serviço de Atendimento ao Cliente
+
+Se precisar falar com a gente por telefone, nossos atendentes estão disponíveis de segunda a sexta das 8h às 20h e aos sábados das 8h às 18h.
+
+**4020 2202 ** capitais e regiões metropolitanas **0800 602 2202 ** outras localidades
+
+### WhatsApp
+
+Segunda via de fatura, negociação de fatura em atraso e dúvidas do dia a dia.
+
+**[(51) 4042 1377](https://wa.me/555140421377) ** seg. a sex. 8h–20h · sáb. 8h–18h
+
+### Ouvidoria
+
+Já entrou em contato com a HS Financeira e não conseguiu resolver o seu problema? Fale com a nossa ouvidoria.
+
+**0800 648 7070 ** seg. a sex. 8h–12h e 13h30–15h
+
+Mensagem
+
+### Prefere escrever?
+
+Envie sua mensagem e nosso time responde no e-mail informado. Para assuntos urgentes — bloqueio por perda ou roubo — use a Central 24 horas.
+
+Ao enviar, você concorda com o tratamento dos seus dados para fins de atendimento, conforme a nossa política de privacidade e a LGPD.
+
+Nome completo
+
+E-mail
+
+CPF (opcional, agiliza o atendimento)
+
+Assunto Selecione Solicitação de cartão Fatura e pagamento Contestação de compra Hoje Pay Atualização de dados Outro assunto
+
+Mensagem
+
+Enviar mensagem
+
+Protótipo: o formulário ainda não está conectado a um destino de envio.
+
+==============================================================================
+
+# Trabalhe conosco
+
+URL: https://cartaohoje.com.br/trabalhe-conosco/
+
+Carreiras
+
+## Venha construir o amanhã com a gente
+
+O Cartão Hoje é operado pela HS Financeira, uma das 20 marcas do Grupo Herval — grupo gaúcho fundado em 1959, com atuação em indústria, comércio e serviços em todas as regiões do país.
+
+### Como nos candidatar
+
+As oportunidades da HS Financeira e das demais empresas do grupo são publicadas no portal de carreiras do Grupo Herval. Por lá você acompanha as vagas abertas, cadastra seu currículo e recebe o retorno do processo seletivo.
+
+[Ver vagas abertas](https://www.herval.com.br/trabalhe-conosco/) [Cadastrar currículo](https://www.herval.com.br/trabalhe-conosco/)
+
+[imagem: Pessoas reunidas ao ar livre]
+
+Por que aqui
+
+### O que oferecemos
+
+#### Um grupo sólido
+
+Mais de 60 anos de história, 20 marcas e presença nacional.
+
+#### Times multidisciplinares
+
+Tecnologia, crédito, produto, atendimento e operações trabalhando juntos.
+
+#### Produto com impacto
+
+Crédito que ajuda milhares de brasileiros a realizar planos no dia a dia.
+
+==============================================================================
+
+# Política de Privacidade
+
+URL: https://cartaohoje.com.br/politica-de-privacidade/
+
+Privacidade
+
+## Política de Privacidade
+
+Esta política explica quais dados pessoais tratamos quando você pede, usa ou consulta o Cartão Hoje, o aplicativo e o Hoje Pay — para quê, com quem compartilhamos e como você controla isso.
+
+### Nesta página
+
+- 1. Quem trata os seus dados
+
+- 2. A que esta política se aplica
+
+- 3. Que dados coletamos
+
+- 4. Por que usamos e com que base legal
+
+- 5. Com quem compartilhamos
+
+- 6. Cookies e tecnologias no site
+
+- 7. Análise de crédito automatizada
+
+- 8. Por quanto tempo guardamos
+
+- 9. Como protegemos
+
+- 10. Os seus direitos
+
+- 11. Como exercer os seus direitos
+
+- 12. Transferência internacional
+
+- 13. Crianças e adolescentes
+
+- 14. Mudanças nesta política
+
+**Rascunho para revisão jurídica** Esta página é uma minuta construída a partir do que o site, o aplicativo e os contratos do Cartão Hoje já indicam. Todo bloco destacado como este depende de confirmação do Jurídico e do Encarregado de Dados, e nenhum deles deve ir ao ar.
+
+**Última atualização:** a preencher com a data de aprovação pelo Jurídico.
+
+### 1. Quem trata os seus dados
+
+O controlador dos dados pessoais tratados no Cartão Hoje é a **HS Financeira S.A. — Crédito, Financiamento e Investimento**, inscrita no CNPJ sob o nº 07.512.441/0001-11, com sede na BR-116, nº 7070, Sala 14, Portal da Serra, Dois Irmãos (RS), CEP 93950-000. A HS Financeira é a instituição financeira do Grupo Herval responsável pela emissão e pela gestão do Cartão Hoje.
+
+**A confirmar** Confirmar se o tratamento é feito apenas pela HS Financeira ou se há **controladoria conjunta** com outras empresas do Grupo Herval — por exemplo nas ações de relacionamento com as lojas parceiras. Havendo, a política precisa nomear cada controladora e a divisão de responsabilidades.
+
+### 2. A que esta política se aplica
+
+Esta política vale para o tratamento de dados pessoais realizado nos seguintes contextos:
+
+- o site **cartaohoje.com.br**, incluindo os formulários de contato e de candidatura;
+
+- o aplicativo **“Hoje - Cartão e HojePay”**, disponível na App Store e no Google Play;
+
+- o pedido, a análise, a emissão e o uso do **Cartão Hoje**;
+
+- a carteira **Hoje Pay** e as compras realizadas por meio dela;
+
+- os canais de atendimento: Central de Atendimento, SAC, WhatsApp e Ouvidoria.
+
+Sites e aplicativos de terceiros acessados a partir daqui — como os das lojas parceiras taQi, volis, iPlace e voulevar, ou os dos bancos emissores dos cartões usados no Hoje Pay — têm políticas próprias, pelas quais não respondemos.
+
+### 3. Que dados coletamos
+
+#### 3.1. Dados que você nos fornece
+
+- **Identificação:** nome completo, CPF, documento de identidade, data de nascimento, nome da mãe, sexo, estado civil, nacionalidade e naturalidade.
+
+- **Contato:** endereço residencial, telefone e e-mail.
+
+- **Dados financeiros e profissionais:** renda, ocupação e demais informações exigidas na proposta de adesão ao cartão.
+
+- **Conteúdo do atendimento:** o que você escreve ou fala nos formulários do site, no WhatsApp, na Central de Atendimento, no SAC e na Ouvidoria, incluindo gravações de chamadas.
+
+- **Currículo,** quando você se candidata a uma vaga pelo portal de carreiras do Grupo Herval.
+
+#### 3.2. Dados gerados pelo seu uso
+
+- **Transações:** compras, valores, estabelecimentos, parcelamentos, faturas, pagamentos e limites.
+
+- **Uso do app e do site:** registros de acesso, endereço IP, data e hora, identificadores do dispositivo, sistema operacional e versão do aplicativo.
+
+- **Segurança:** informações usadas para prevenir fraude e autenticar você nas operações.
+
+#### 3.3. Dados obtidos de terceiros
+
+- Informações de **bureaus de crédito e bases públicas**, usadas na análise de crédito e na atualização cadastral.
+
+- Informações do **Sistema de Informações de Créditos (SCR)** do Banco Central, nos termos da regulação aplicável.
+
+- Dados de **lojas parceiras**, quando o pedido do cartão ou a compra começa no ponto de venda.
+
+- Confirmações do **banco emissor** do cartão que você cadastra no Hoje Pay.
+
+**A confirmar** Falta a lista real e nominal das fontes externas — quais bureaus, qual provedor antifraude, qual processadora de cartões. Falta também definir se há coleta de **dado biométrico** no onboarding do aplicativo (selfie, prova de vida, leitura de documento). Dado biométrico é dado sensível e exige menção específica e base legal própria.
+
+### 4. Por que usamos e com que base legal
+
+Cada uso dos seus dados se apoia em uma das hipóteses legais previstas na Lei Geral de Proteção de Dados (Lei nº 13.709/2018):
+
+Para quêBase legal
+
+Analisar o seu pedido, verificar a sua identidade e avaliar o risco de créditoProcedimentos preliminares relacionados a contrato, a seu pedido
+
+Emitir o cartão e processar compras, faturas, pagamentos e a carteira Hoje PayExecução do contrato
+
+Atender você nos nossos canais e responder solicitaçõesExecução do contrato e legítimo interesse
+
+Prevenir fraude e garantir a segurança das operaçõesCumprimento de obrigação legal e legítimo interesse
+
+Cumprir exigências do Banco Central, do COAF e da legislação fiscalCumprimento de obrigação legal e regulatória
+
+Defender nossos direitos em processos administrativos, judiciais ou arbitraisExercício regular de direitos
+
+Enviar ofertas, novidades e comunicações de marketingConsentimento, revogável a qualquer momento
+
+Melhorar produtos, medir o uso do site e do app e produzir estatísticasLegítimo interesse
+
+**A confirmar** A escolha entre **legítimo interesse** e **consentimento** para relacionamento e para as ofertas das lojas parceiras precisa ser decidida pelo Jurídico: ela define se o site terá ou não um opt-in explícito. Cada finalidade apoiada em legítimo interesse deve ter um teste de balanceamento documentado.
+
+### 5. Com quem compartilhamos
+
+Não vendemos os seus dados pessoais. Compartilhamos apenas o necessário, e apenas com:
+
+- **empresas do Grupo Herval**, para a gestão do produto e do relacionamento com você;
+
+- **bandeira e processadoras de cartão**, para autorizar e liquidar as suas compras;
+
+- **bureaus de crédito e o Banco Central**, para consulta, registro e cumprimento da regulação;
+
+- **bancos emissores** dos cartões cadastrados no Hoje Pay, no limite do necessário para autorizar a compra;
+
+- **lojas parceiras** — taQi, volis, iPlace e voulevar — quando a compra ou o pedido acontece no canal delas;
+
+- **fornecedores de tecnologia, nuvem, antifraude, cobrança e atendimento**, que tratam dados por nossa conta e seguem as nossas instruções;
+
+- **autoridades públicas**, quando houver obrigação legal ou ordem judicial.
+
+**A confirmar** Validar a lista de operadores e, principalmente, o que exatamente trafega entre a HS Financeira e o banco emissor no fluxo do Hoje Pay. A descrição acima é a leitura razoável do fluxo publicado no site e precisa ser conferida com o time de produto antes de virar texto definitivo.
+
+### 6. Cookies e tecnologias no site
+
+Cookies são pequenos arquivos gravados no seu navegador. Usamos:
+
+- **necessários:** mantêm o site funcionando e seguro, e não podem ser desativados;
+
+- **de desempenho:** mostram, de forma agregada, como as pessoas usam as páginas, para melhorarmos o site;
+
+- **de publicidade:** permitem medir campanhas e apresentar anúncios mais relevantes.
+
+Você pode bloquear ou apagar cookies nas configurações do seu navegador. Bloquear os necessários pode impedir partes do site de funcionar.
+
+**A confirmar** Esta seção precisa da lista real de cookies e ferramentas do site publicado — analytics, pixel de mídia, tag manager — com nome, finalidade e prazo de cada um. Se houver cookies de desempenho ou de publicidade, o site precisa de um **banner de consentimento** em que recusar seja tão fácil quanto aceitar. Registro do que existe hoje: as páginas carregam a fonte Plus Jakarta Sans a partir do Google Fonts, o que envia o IP do visitante ao Google — vale hospedar a fonte no próprio domínio e eliminar esse compartilhamento.
+
+### 7. Análise de crédito automatizada
+
+A concessão e o limite do Cartão Hoje passam por análise de crédito, que pode ser feita por sistemas automatizados a partir dos dados que você informa e dos obtidos junto a bureaus de crédito. Você tem o direito de **solicitar a revisão** de decisões tomadas unicamente com base em tratamento automatizado que afetem os seus interesses.
+
+**A confirmar** Confirmar se a análise é de fato integralmente automatizada e como funciona, na prática, o pedido de revisão previsto no artigo 20 da LGPD: quem recebe, em que prazo responde e o que é informado ao titular.
+
+### 8. Por quanto tempo guardamos
+
+Mantemos os seus dados pelo tempo necessário às finalidades desta política e, depois disso, pelos prazos exigidos pela legislação — entre eles a guarda de documentos e registros de operações financeiras e a retenção de registros de acesso a aplicações de internet prevista no Marco Civil da Internet. Encerrado o prazo, os dados são eliminados ou anonimizados.
+
+**A confirmar** Substituir por uma tabela de retenção com prazos concretos por categoria: cadastro, transações, gravações de atendimento, registros de acesso e currículos. Prazo genérico é o ponto mais cobrado em fiscalização.
+
+### 9. Como protegemos
+
+Adotamos medidas técnicas e administrativas para proteger os seus dados contra acesso não autorizado, perda, alteração e divulgação indevida — entre elas controle de acesso por perfil, criptografia do tráfego, monitoramento e registro de operações, e compromissos contratuais de confidencialidade com fornecedores. Nenhum sistema é totalmente imune: se ocorrer um incidente de segurança relevante, comunicaremos você e a Autoridade Nacional de Proteção de Dados nos termos da lei.
+
+### 10. Os seus direitos
+
+A LGPD garante a você o direito de:
+
+- confirmar se tratamos dados seus e acessá-los;
+
+- corrigir dados incompletos, inexatos ou desatualizados;
+
+- pedir a anonimização, o bloqueio ou a eliminação de dados desnecessários ou tratados em desconformidade com a lei;
+
+- pedir a portabilidade dos seus dados a outro fornecedor;
+
+- solicitar a eliminação dos dados tratados com base no seu consentimento;
+
+- saber com quais entidades públicas e privadas compartilhamos os seus dados;
+
+- ser informado sobre a possibilidade de não consentir e sobre as consequências disso;
+
+- revogar o consentimento a qualquer momento;
+
+- opor-se a tratamento feito com base em outra hipótese legal, quando houver descumprimento da lei;
+
+- pedir a revisão de decisões automatizadas.
+
+Alguns dados não podem ser eliminados enquanto durar a obrigação legal ou regulatória de guardá-los — é o caso dos registros de operações financeiras.
+
+### 11. Como exercer os seus direitos
+
+Fale com o nosso Encarregado pelo Tratamento de Dados Pessoais:
+
+**A preencher** Nome do Encarregado (DPO) e canal oficial de atendimento ao titular — e-mail dedicado ou formulário próprio. A LGPD exige que essa identidade e esse canal estejam **publicamente divulgados**, e hoje eles não constam em lugar nenhum do site.
+
+Enquanto o canal dedicado não estiver publicado, você também pode nos procurar pelos canais gerais listados em [Fale conosco](https://cartaohoje.com.br/fale-conosco/): Central de Atendimento, SAC, WhatsApp (51) 4042 1377 e Ouvidoria 0800 648 7070. Você tem ainda o direito de peticionar diretamente à Autoridade Nacional de Proteção de Dados (ANPD).
+
+### 12. Transferência internacional
+
+Alguns fornecedores de tecnologia podem processar dados em servidores fora do Brasil. Quando isso acontece, exigimos que a transferência siga uma das hipóteses do artigo 33 da LGPD e que o fornecedor mantenha nível de proteção compatível com o da lei brasileira.
+
+**A confirmar** Confirmar se há transferência internacional, para quais países e sob qual instrumento — cláusulas-padrão contratuais da ANPD, cláusulas específicas ou decisão de adequação. Se não houver transferência, esta seção deve ser removida, e não mantida por precaução.
+
+### 13. Crianças e adolescentes
+
+O Cartão Hoje é destinado a maiores de 18 anos e não coletamos intencionalmente dados de crianças e adolescentes. Se identificarmos um cadastro nessa situação, eliminaremos os dados, salvo quando a lei exigir a guarda.
+
+### 14. Mudanças nesta política
+
+Podemos atualizar esta política para refletir mudanças nos nossos produtos, na tecnologia ou na legislação. A data da última atualização fica sempre no topo da página. Quando a mudança for relevante, avisaremos você pelos nossos canais antes que ela passe a valer.
+
+**Pendências antes de publicar** 1. Nome e canal do Encarregado (DPO). 2. Data de vigência. 3. Tabela de prazos de retenção. 4. Lista real de cookies e, havendo rastreamento, banner de consentimento. 5. Lista nominal de operadores e de bureaus. 6. Definição sobre dados biométricos no onboarding do app. 7. Decisão entre consentimento e legítimo interesse para marketing. 8. Confirmação sobre transferência internacional. 9. Conectar o formulário de [Fale conosco](https://cartaohoje.com.br/fale-conosco/) a um destino real: hoje ele coleta nome, e-mail e CPF sem destino configurado e sem aviso de tratamento no próprio formulário.
