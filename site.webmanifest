@@ -4,14 +4,14 @@
   "description": "Cartão de crédito Visa internacional, solicitado pelo app.",
   "lang": "pt-BR",
   "dir": "ltr",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "browser",
   "background_color": "#F7F5F2",
   "theme_color": "#F7F5F2",
   "icons": [
-    { "src": "/assets/img/marca/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/assets/img/marca/icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "/assets/img/marca/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    { "src": "assets/img/marca/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/marca/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/img/marca/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }
