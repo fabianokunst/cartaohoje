@@ -369,6 +369,106 @@ Agora que você conhece o Hoje Pay, simule sua compra e escolha o aparelho que m
 
 [Simule e compre](https://www.iplace.com.br/iplace-club-compra?utm_campaign=bradesco) [Tenho dúvidas](https://cartaohoje.com.br/perguntas-frequentes/)
 
+### Perguntas e respostas
+
+### O que é o Hoje Pay?
+
+O Hoje Pay é uma carteira digital integrada ao aplicativo do Cartão Hoje. Ele permite cadastrar um cartão de crédito elegível para comprar aparelhos Apple participantes do programa, com condições diferenciadas na iPlace.
+
+### Quais cartões são aceitos no Hoje Pay?
+
+Atualmente, são aceitos cartões de crédito elegíveis dos seguintes bancos:
+
+- Bradesco
+
+- Banco do Brasil
+
+- BTG Pactual
+
+### Posso cadastrar cartão de terceiros para realizar a compra pelo Hoje Pay?
+
+Não. O cartão cadastrado deve ser obrigatoriamente do titular da conta da carteira digital Hoje Pay.
+
+### Preciso abrir uma conta bancária para usar o Hoje Pay?
+
+Não é necessário abrir uma nova conta bancária nem mudar de banco para utilizar o Hoje Pay.
+
+### Onde posso utilizar o Hoje Pay?
+
+O Hoje Pay pode ser utilizado para comprar aparelhos Apple participantes do programa no [site da iPlace](https://www.iplace.com.br/iplace-club-compra?utm_campaign=bradesco).
+
+### Como comprar com o HojePay da iPlace?
+
+- [Baixe o aplicativo Hoje](https://cartaohoje.com.br/baixar-o-app/) na App Store ou Google Play.
+
+- Crie sua conta ou faça login no aplicativo.
+
+- Cadastre seu cartão Bradesco, BTG Pactual ou Banco do Brasil elegível na área HojePay.
+
+- Escolha o produto no site iPlace e selecione a opção HojePay entre as formas de pagamento.
+
+- Adicione o produto ao carrinho.
+
+- Após finalizar o pedido, acesse o aplicativo Hoje para visualizar a solicitação de pagamento.
+
+- Confirme a transação diretamente no app.
+
+- Após a aprovação, seu pedido será processado e você poderá acompanhar o status da compra pelos canais iPlace.
+
+**Importante:** a confirmação da compra no aplicativo Hoje é uma etapa obrigatória. Sem essa validação, o pedido não será confirmado.
+
+### O que fazer se a compra for recusada?
+
+Se sua compra não for aprovada, verifique se o cartão cadastrado está ativo, possui limite disponível e se a confirmação da transação foi realizada corretamente no aplicativo Hoje.
+
+Caso o problema persista, tente novamente após alguns minutos ou entre em contato com os canais de atendimento do iPlace para obter suporte.
+
+### Após o pagamento das parcelas, o produto será meu?
+
+Se você optar por ficar com o produto e realizar o pagamento da parcela final, o produto será seu.
+
+Antes de contratar o HojePay, você pode ver o valor das parcelas mensais e da parcela final na página de produto e no carrinho, sabendo exatamente quanto irá pagar ao longo de todo o contrato.
+
+Caso opte por não realizar o pagamento da parcela residual, você pode devolver o aparelho* como forma de quitação.
+
+* O aparelho deverá estar dentro das condições físicas, estéticas e operacionais aceitas.
+
+### Existe algum valor para pagar no final?
+
+Sim. Caso decida ficar com o produto, será necessário realizar o pagamento da parcela final, que será o valor informado no momento da contratação.
+
+O HojePay oferece flexibilidade para você escolher o que faz mais sentido ao final do contrato: ficar com o produto, devolvê-lo ou renovar seu HojePay.
+
+### Posso devolver o produto?
+
+Sim. No HojePay você pode optar por devolver o produto em vez de renovar ou realizar o pagamento da parcela final, conforme as condições do contrato.
+
+### Preciso ter o aplicativo Cartão Hoje para usar o Hoje Pay?
+
+Sim. É necessário [baixar o aplicativo](https://cartaohoje.com.br/baixar-o-app/), criar a conta e configurar o cartão dentro do aplicativo Hoje na aba Hoje Pay antes de realizar a compra na iPlace.
+
+### Posso acompanhar minha compra pelo aplicativo?
+
+Sim. Depois de finalizar a compra no site da iPlace, é possível acompanhar os detalhes e as informações do pedido diretamente pelo aplicativo do Hoje.
+
+### O cartão precisa ter limite disponível?
+
+Sim. O cartão cadastrado precisa estar válido e possuir limite disponível para realizar a operação.
+
+### Diferença entre iPlace Hoje e Hoje Pay
+
+A principal diferença entre os programas **iPlace Hoje** e **Hoje Pay** está na forma de pagamento e nos requisitos para participar.
+
+**iPlace Hoje:** para participar, é necessário ter o **Cartão Hoje**. Ao utilizar o cartão, você pode aproveitar os benefícios do programa [iPlace Hoje](https://cartaohoje.com.br/iplace-hoje/).
+
+**Hoje Pay:** não é necessário solicitar o Cartão Hoje. Para participar, é preciso cadastrar, na **Wallet do Hoje Pay**, um cartão Bradesco, BTG Pactual ou Banco do Brasil elegível. A Wallet está disponível no aplicativo do Cartão Hoje. Nesse caso, não é necessário passar por uma nova análise de crédito para solicitar o Cartão Hoje.
+
+**Resumindo:**
+
+- **iPlace Hoje:** Cartão Hoje → participação no programa iPlace Hoje + benefícios.
+
+- **Hoje Pay:** cartão Bradesco, BTG Pactual ou Banco do Brasil elegível → sem necessidade de solicitar o Cartão Hoje → participação no programa iPlace Hoje + benefícios.
+
 ==============================================================================
 
 # iPlace Hoje
@@ -393,7 +493,9 @@ Entenda como funciona
 
 Parcele de 70% a 90% do valor em 21x. Ao final das 21 parcelas, você decide como pagar a parcela final, escolhendo uma das 3 opções abaixo.
 
-**21x** De 70% a 90% do valor do produto **Parcela final**
+**21x** De 70% a 90% do valor do produto
+
+**Parcela final** De 10% a 30% do valor
 
 Condição disponível para o Banco Hoje.
 

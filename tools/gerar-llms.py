@@ -73,6 +73,7 @@ class ParaMarkdown(HTMLParser):
         self.buf = []            # texto da linha em construção
         self.pilha = []          # tags abertas
         self.mudo = 0            # profundidade dentro de tag ignorada
+        self.oculto = None       # [tag, profundidade] do elemento aria-hidden aberto
         self.no_main = False
         self.prefixo = None      # marcador da linha atual ("- ", "### ", ...)
         self.href = None
@@ -108,6 +109,17 @@ class ParaMarkdown(HTMLParser):
             self.no_main = True
             return
         if not self.no_main:
+            return
+
+        # aria-hidden="true" marca desenho (eixos, amostras, ornamentos): quem
+        # usa leitor de tela não ouve, então o Markdown também não leva.
+        if self.oculto:
+            if tag == self.oculto[0] and tag not in VAZIOS:
+                self.oculto[1] += 1
+            return
+        if a.get("aria-hidden") == "true":
+            if tag not in VAZIOS:
+                self.oculto = [tag, 1]
             return
 
         if tag in IGNORAR:
@@ -158,6 +170,13 @@ class ParaMarkdown(HTMLParser):
         if not self.no_main:
             return
 
+        if self.oculto:
+            if tag == self.oculto[0]:
+                self.oculto[1] -= 1
+                if not self.oculto[1]:
+                    self.oculto = None
+            return
+
         if tag in IGNORAR:
             if tag not in VAZIOS:
                 self.mudo = max(0, self.mudo - 1)
@@ -197,7 +216,7 @@ class ParaMarkdown(HTMLParser):
                     break
 
     def handle_data(self, dados):
-        if not self.no_main or self.mudo:
+        if not self.no_main or self.mudo or self.oculto:
             return
         if self.href is not None:
             self.texto_link.append(dados)

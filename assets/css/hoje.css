@@ -727,30 +727,54 @@ html[data-os="android"] .redir__android{display:inline}
 .ph-art .hero__chip{top:auto;right:auto;left:-5%;bottom:9%}
 @media (max-width:900px){.ph-art .hero__chip{left:var(--s-4);bottom:var(--s-4)}}
 
-/* Plano 21x + parcela final. A barra é só desenho (aria-hidden): 21 parcelas
-   iguais e uma maior, vazada. O sentido está na legenda, que é texto e usa a
-   mesma grade da barra para cair embaixo de cada parte. */
+/* Plano 21x + parcela final: barra empilhada de parte-do-todo (o valor do
+   produto). Dois blocos sólidos separados por um vão de 2 px, com a divisão
+   no meio da faixa de 70% a 90% — o eixo embaixo marca essa faixa. As cores
+   são dois degraus do mesmo laranja, do claro para o escuro, porque as 21
+   parcelas vêm antes da final (par validado como rampa ordinal: mesmo matiz,
+   ΔL visível, 2,46:1 sobre o branco). Identidade nunca só pela cor: cada
+   bloco tem rótulo e amostra. Barra e eixo são desenho (aria-hidden); quem
+   lê é a legenda. No desktop ela fica alinhada a cada bloco; abaixo de
+   900 px vira lista embaixo do eixo, e a barra mantém a proporção real. */
 .plan{
   background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);
-  padding:clamp(24px,3.4vw,44px);box-shadow:var(--sh-1);--fin:24%
+  padding:clamp(24px,3.4vw,44px);box-shadow:var(--sh-1);
+  --split:80%;--pa:var(--coral);--pb:var(--coral-ink)
 }
-.plan__bar,.plan__legend{display:grid;grid-template-columns:minmax(0,1fr) var(--fin);gap:var(--s-3)}
-.plan__bar{height:22px}
-.plan__n{display:flex;gap:4px}
-.plan__n>span{flex:1;border-radius:5px;background:var(--coral)}
-.plan__f{border:2px solid var(--coral);border-radius:7px;background:var(--coral-wash)}
-.plan__legend{margin-top:var(--s-5)}
-.plan__k{display:block;font-size:.92rem;line-height:1.45;color:var(--muted)}
+.plan__chart{display:grid;grid-template-areas:"legend" "bar" "axis"}
+.plan__legend,.plan__bar{display:grid;grid-template-columns:var(--split) minmax(0,1fr);column-gap:2px}
+.plan__legend{grid-area:legend;margin-bottom:var(--s-4)}
+.plan__k{font-size:.92rem;line-height:1.45;color:var(--muted);padding-right:var(--s-4)}
 .plan__k strong{
-  display:block;margin-bottom:var(--s-1);color:var(--ink);
+  display:flex;align-items:center;gap:var(--s-2);margin-bottom:var(--s-1);color:var(--ink);
   font-size:clamp(1.3rem,2.1vw,1.7rem);font-weight:800;letter-spacing:-.03em;line-height:1.15
 }
-.plan__legal{margin-top:var(--s-6);padding-top:var(--s-5);border-top:1px solid var(--line);font-size:.8rem;color:var(--muted-2)}
-@media (max-width:620px){
-  .plan{--fin:34%}
-  .plan__n{gap:2px}
-  .plan__n>span{border-radius:2px}
+.plan__k strong::before{content:"";flex:none;width:12px;height:12px;border-radius:3px;background:var(--pa)}
+.plan__k--b strong::before{background:var(--pb)}
+/* quadrado na linha de base (0%), 4 px de raio só na ponta */
+.plan__bar{grid-area:bar;height:24px}
+.plan__a{background:var(--pa)}
+.plan__b{background:var(--pb);border-radius:0 4px 4px 0}
+.plan__axis{grid-area:axis;position:relative;height:34px;margin-top:var(--s-2);border-top:1px solid var(--line-2)}
+.plan__axis span{
+  position:absolute;top:12px;left:var(--x);transform:translateX(-50%);
+  font-size:.78rem;font-weight:600;line-height:1;color:var(--muted-2);font-variant-numeric:tabular-nums
 }
+.plan__axis span::before{content:"";position:absolute;left:50%;top:-12px;width:1px;height:6px;background:var(--line-2)}
+.plan__axis .plan__t0{transform:none}
+.plan__axis .plan__t0::before{left:0}
+.plan__axis .plan__t100{transform:translateX(-100%)}
+.plan__axis .plan__t100::before{left:auto;right:0}
+/* a faixa em que a divisão pode cair: trecho mais grosso do eixo */
+.plan__axis::before{content:"";position:absolute;left:70%;width:20%;top:-2px;height:3px;border-radius:2px;background:var(--ink-3)}
+.plan__legal{margin-top:var(--s-6);padding-top:var(--s-5);border-top:1px solid var(--line);font-size:.8rem;color:var(--muted-2)}
+@media (max-width:900px){
+  .plan__chart{grid-template-areas:"bar" "axis" "legend"}
+  .plan__legend{grid-template-columns:1fr;row-gap:var(--s-4);margin:var(--s-5) 0 0}
+  .plan__k strong{font-size:1.2rem}
+}
+/* no celular os rótulos de 90% e 100% encostariam: ficam só os da faixa */
+@media (max-width:620px){.plan__axis .plan__t0,.plan__axis .plan__t100{display:none}}
 
 /* "Exclusivo: hoje". O wordmark fica no tamanho mínimo de tela (72 px) ou
    acima, e o vão até o texto cobre a área de proteção de meia altura. */
