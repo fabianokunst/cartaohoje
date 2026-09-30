@@ -139,3 +139,5 @@ card("baixar-o-app.jpg", "Aplicativo", "Baixe o app do Cartão Hoje",
 card("politica-de-privacidade.jpg", "Documento", "Política de Privacidade")
 card("hoje-pay.jpg", "Carteira digital", "Hoje Pay: sua compra na iPlace",
      os.path.join(FOTO, "hoje-pay.jpg"))
+card("iplace-hoje.jpg", "Programa iPlace Hoje", "Seu Apple em 21x + parcela final",
+     os.path.join(FOTO, "iphone.jpg"))
