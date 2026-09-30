@@ -246,7 +246,7 @@ Ficha do produto:
 - Idade mínima: 18 anos
 - Renda mínima: 1 salário mínimo
 - Documento exigido: RG emitido há até 10 anos, ou CNH válida (frente e verso).
-  Comprovante de endereço e de renda são opcionais.
+  Poderá ser solicitado comprovante de endereço e de renda.
 - Prazo da análise: poucos minutos, no próprio app
 - Após uma recusa: nova solicitação em 90 dias
 - Onde se pede: somente pelo aplicativo, para iPhone e Android
