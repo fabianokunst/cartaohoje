@@ -73,13 +73,13 @@ Gratuito para iPhone e Android.
 
 #### Preencha seus dados
 
-Nome, CPF, data de nascimento e renda. Na sequência, uma foto do documento de identificação (RG ou CNH), frente e verso.
+Nome, CPF, data de nascimento e renda. Na sequência, uma foto do documento de identificação (RG ou CNH), frente e verso. Poderá ser solicitado comprovante de endereço e de renda.
 
 #### Receba a resposta
 
 A análise leva poucos minutos. Você recebe uma notificação no celular e acompanha tudo pelo app.
 
-**Quem pode pedir:** qualquer pessoa física com mais de 18 anos e renda superior a 1 salário mínimo. Comprovante de renda e de endereço são opcionais.
+**Quem pode pedir:** qualquer pessoa física com mais de 18 anos e renda superior a 1 salário mínimo.
 
 [imagem: Mão aproximando um cartão de crédito da maquininha]
 
