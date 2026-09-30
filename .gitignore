@@ -11,3 +11,6 @@ desktop.ini
 # Python (tools/)
 __pycache__/
 *.pyc
+
+# Configuração local do Claude Code
+.claude/
