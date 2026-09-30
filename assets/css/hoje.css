@@ -43,6 +43,9 @@
 
   /* tipografia */
   --sans:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+  /* movimento: entrada desacelera longa e macia, sem quique */
+  --ease-enter:cubic-bezier(.16,1,.3,1);
 }
 
 /* ---------- 2. Base ---------- */
@@ -827,4 +830,81 @@ html[data-os="android"] .redir__android{display:inline}
   .prod{flex-direction:row;align-items:center;gap:var(--s-4);padding:var(--s-3) var(--s-5) var(--s-3) var(--s-3);border-radius:var(--r)}
   .prod__ic{width:44px;height:44px}
   .prod__t{flex:1}
+}
+
+/* ---------- 27. Entrada do hero ---------- */
+/* O hero de cada página entra em sequência ao carregar: os textos sobem de
+   um desfoque leve até ficarem nítidos, um de cada vez, e a arte chega logo
+   atrás. É só CSS — roda antes do JS, não depende dele e não pisca.
+   - As keyframes só têm `from`, com fill `backwards`: terminada a entrada,
+     vale o estilo normal do elemento (hover, transform próprio, flutuação).
+   - Movimento com `translate`/`scale`/`rotate` avulsos, nunca `transform`:
+     eles somam com o transform que o elemento já tem (foto a 1,2°, cartão
+     a −7° flutuando), em vez de substituí-lo.
+   - A foto do LCP começa a aparecer em 0,1 s: a entrada quase não atrasa a
+     métrica.
+   - Ordem pela posição no HTML (nth-child), com 90 ms entre um item e o
+     próximo. Página sem .hero/.phero/.dlhero entra com `.enter` no bloco.
+   Quem pede menos movimento vê tudo parado, já no lugar. */
+@keyframes in-rise{from{opacity:0;translate:0 var(--rise,22px);filter:blur(var(--blur,8px))}}
+@keyframes in-soft{from{opacity:0;translate:0 var(--rise,32px)}}
+@keyframes in-zoom{from{scale:var(--zoom,1.14)}}
+@keyframes in-glow{from{opacity:0;scale:.6}}
+@keyframes in-bar{from{scale:0 1}}
+@keyframes in-pop{from{opacity:0;translate:0 16px;scale:.9;filter:blur(4px)}}
+@keyframes in-card{from{opacity:0;translate:-28px 64px;rotate:-9deg}}
+/* com pathLength="1" no path, o traço inteiro mede 1 */
+@keyframes in-draw{from{stroke-dasharray:1;stroke-dashoffset:1}to{stroke-dasharray:1;stroke-dashoffset:0}}
+
+@media (prefers-reduced-motion:no-preference){
+  /* início de cada sequência; o texto do .split espera a trilha */
+  :is(.hero__in>:first-child,.phero__in,.dlhero__in,.enter){--t0:.06s;--step:.09s}
+  .phero__in .split>:first-child{--t0:.15s}
+  .dl{--t0:.42s;--step:.1s}
+
+  :is(.hero__in>:first-child,.phero__in,.phero__in .split>:first-child,.dlhero__in,.dl,.enter)>*{--k:0}
+  :is(.hero__in>:first-child,.phero__in,.phero__in .split>:first-child,.dlhero__in,.dl,.enter)>:nth-child(2){--k:1}
+  :is(.hero__in>:first-child,.phero__in,.phero__in .split>:first-child,.dlhero__in,.dl,.enter)>:nth-child(3){--k:2}
+  :is(.hero__in>:first-child,.phero__in,.phero__in .split>:first-child,.dlhero__in,.dl,.enter)>:nth-child(4){--k:3}
+  :is(.hero__in>:first-child,.phero__in,.phero__in .split>:first-child,.dlhero__in,.dl,.enter)>:nth-child(5){--k:4}
+  :is(.hero__in>:first-child,.phero__in,.phero__in .split>:first-child,.dlhero__in,.dl,.enter)>:nth-child(6){--k:5}
+  :is(.hero__in>:first-child,.phero__in,.phero__in .split>:first-child,.dlhero__in,.dl,.enter)>:nth-child(n+7){--k:6}
+
+  /* textos: trilha, sobretítulo, título, lead, botões, fatos */
+  :is(.hero__in>:first-child,.phero__in .split>:first-child,.enter)>*,
+  :is(.phero__in,.dlhero__in)>:not(.split,.dl),
+  .dl>*{
+    animation:in-rise 1.1s var(--ease-enter) backwards;
+    animation-delay:calc(var(--t0) + var(--k) * var(--step))
+  }
+  /* o traço do sobretítulo se estende depois que o texto chega */
+  :is(.hero,.phero,.dlhero,.enter) .eyebrow::before{
+    transform-origin:left;
+    animation:in-bar .9s var(--ease-enter) backwards;
+    animation-delay:calc(var(--t0) + var(--k) * var(--step) + .3s)
+  }
+  /* "O amanhã começa… hoje": a palavra da marca chega uma batida depois */
+  .hero h1 span{
+    display:inline-block;--rise:.3em;
+    animation:in-rise 1.1s var(--ease-enter) backwards;
+    animation-delay:calc(var(--t0) + var(--k) * var(--step) + .34s)
+  }
+
+  /* fundo: brilho abre devagar, arcos se desenham de baixo para cima */
+  :is(.hero__glow,.phero__glow){animation:in-glow 2.4s var(--ease-enter) backwards}
+  .hero__arcs path{animation:in-draw 2.2s var(--ease-enter) .2s backwards}
+  .hero__arcs path:nth-child(2){animation-delay:.32s}
+  .hero__arcs path:nth-child(3){animation-delay:.44s}
+  .hero__arcs path:nth-child(4){animation-delay:.56s}
+
+  /* foto: a moldura sobe e a imagem assenta de um zoom leve */
+  :is(.hero__photo,.ph-art .split__art){animation:in-soft 1.3s var(--ease-enter) .1s backwards}
+  :is(.hero__photo,.ph-art .split__art) img{animation:in-zoom 2.2s var(--ease-enter) .1s backwards}
+  /* produto recortado: sobe sobre o próprio brilho */
+  .phero .prod-art::before{animation:in-glow 2s var(--ease-enter) .15s backwards}
+  .phero .prod-art img{--rise:44px;animation:in-soft 1.4s var(--ease-enter) .25s backwards}
+
+  /* cartão gira até −7° enquanto sobe; a flutuação continua por cima */
+  .hero__card{animation:in-card 1.4s var(--ease-enter) .5s backwards,float 7s ease-in-out infinite}
+  :is(.hero,.phero) .hero__chip{animation:in-pop 1s var(--ease-enter) .78s backwards}
 }

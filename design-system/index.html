@@ -221,10 +221,12 @@
   <!-- ================= CONTEÚDO ================= -->
   <div class="ds-main">
 
-    <p class="eyebrow">Documentação viva</p>
-    <h1 class="display" style="font-size:clamp(2.2rem,4.6vw,3.2rem)">O sistema por trás do&nbsp;Cartão&nbsp;Hoje</h1>
-    <p class="lead mt-m">Marca, cor, tipografia, espaço e componentes num só lugar. Tudo que você vê abaixo é
-      renderizado pelo CSS de produção: se um token mudar em <code>hoje.css</code>, esta página muda junto.</p>
+    <div class="enter">
+      <p class="eyebrow">Documentação viva</p>
+      <h1 class="display" style="font-size:clamp(2.2rem,4.6vw,3.2rem)">O sistema por trás do&nbsp;Cartão&nbsp;Hoje</h1>
+      <p class="lead mt-m">Marca, cor, tipografia, espaço e componentes num só lugar. Tudo que você vê abaixo é
+        renderizado pelo CSS de produção: se um token mudar em <code>hoje.css</code>, esta página muda junto.</p>
+    </div>
 
     <!-- ---------------------------------------------------------------- -->
     <section class="ds-sec" id="fundamentos">
@@ -931,6 +933,23 @@
         <p class="ds-note">Use o carvão com parcimônia: no máximo duas seções <code>.dark</code> por página,
           normalmente o bloco do app e uma faixa de CTA.</p>
       </div>
+
+      <div class="ds-sub">
+        <h3>Entrada do hero</h3>
+        <ul class="ds-rules">
+          <li>Ao carregar, o hero entra em sequência: trilha, sobretítulo, título, lead e botões sobem de um
+            desfoque leve até ficarem nítidos, com 90&nbsp;ms entre um e outro. A arte — foto, produto, cartão,
+            selo — chega logo atrás. Tudo assenta em menos de 2,5&nbsp;s.</li>
+          <li>Não precisa de classe: vale para os filhos diretos da coluna de texto de <code>.hero__in</code>,
+            de <code>.phero__in</code>, de <code>.dlhero__in</code> e de <code>.dl</code>. Página sem esses
+            componentes põe <code>.enter</code> no bloco de abertura (404 e esta página).</li>
+          <li>A ordem é a do HTML: um item novo entra no lugar certo só por estar na posição certa.</li>
+          <li>Só CSS, na curva <code>--ease-enter</code>. As keyframes movem com <code>translate</code>,
+            <code>scale</code> e <code>rotate</code> avulsos, então somam com o <code>transform</code> do
+            elemento em vez de substituí-lo, e o soltam ao terminar — hover e flutuação seguem normais.</li>
+          <li>Não use <code>.rv</code> dentro do hero: ele já entra sozinho, e as duas animações se somariam.</li>
+        </ul>
+      </div>
     </section>
 
     <!-- ---------------------------------------------------------------- -->
@@ -945,7 +964,7 @@
           <li>Alvo de toque de <strong>44&nbsp;px</strong> em telefone — o CSS já expande links de telefone,
             trilha e rodapé com padding compensado por margem negativa.</li>
           <li><code>:focus-visible</code> visível em tudo que recebe foco. Nunca <code>outline:none</code> sem substituto.</li>
-          <li><code>prefers-reduced-motion</code> desliga animação e o <code>.rv</code> revela sem transição.</li>
+          <li><code>prefers-reduced-motion</code> desliga animação: o hero já aparece no lugar e o <code>.rv</code> revela sem transição.</li>
           <li>Ícones decorativos levam <code>aria-hidden="true"</code>; ícones que carregam sentido levam rótulo.</li>
           <li>A página funciona sem JavaScript: <code>.no-js</code> mostra todo conteúdo com <code>.rv</code>.</li>
         </ul>
