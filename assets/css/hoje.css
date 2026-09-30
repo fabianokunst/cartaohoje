@@ -377,9 +377,16 @@ h1+.lead,h2+.lead,h3+.lead{margin-top:var(--s-5)}
 /* o container gira 90°: some com a barra horizontal e sobra a vertical, que a rotação deita em "−" */
 .faq details[open] summary .pm::before{transform:scaleX(0)}
 .faq__a{padding:0 var(--s-16) var(--s-6) var(--s-5);color:var(--muted);font-size:.985rem;line-height:1.68}
-.faq__a p+p,.faq__a ul,.faq__a ul+p{margin-top:var(--s-3)}
+.faq__a p+p,.faq__a ul,.faq__a ol,.faq__a ul+p,.faq__a ol+p{margin-top:var(--s-3)}
 .faq__a li{position:relative;padding-left:var(--s-5);margin-bottom:var(--s-2)}
 .faq__a li::before{content:"";position:absolute;left:2px;top:10px;width:5px;height:5px;border-radius:50%;background:var(--coral)}
+/* lista numerada: o número entra no lugar do ponto; subitem leva ponto vazado */
+.faq__a ol{counter-reset:faq}
+.faq__a ol>li{counter-increment:faq;padding-left:var(--s-6)}
+.faq__a ol>li::before{content:counter(faq) ".";top:0;left:0;width:auto;height:auto;border-radius:0;background:none;font-weight:700;color:var(--coral-ink)}
+.faq__a li li::before{background:none;border:1.5px solid var(--coral)}
+/* o rótulo em negrito ("Quitar:", "Importante:") guia a leitura: fica em tinta */
+.faq__a strong{color:var(--ink);font-weight:700}
 .faq__a a{color:var(--coral-ink);font-weight:600;border-bottom:1px solid var(--coral-soft)}
 .faq__group{margin-bottom:clamp(40px,5vw,64px)}
 .faq__group h2{font-size:1.5rem;margin-bottom:var(--s-2)}
@@ -735,7 +742,9 @@ html[data-os="android"] .redir__android{display:inline}
    ΔL visível, 2,46:1 sobre o branco). Identidade nunca só pela cor: cada
    bloco tem rótulo e amostra. Barra e eixo são desenho (aria-hidden); quem
    lê é a legenda. No desktop ela fica alinhada a cada bloco; abaixo de
-   900 px vira lista embaixo do eixo, e a barra mantém a proporção real. */
+   900 px vira lista embaixo do eixo, e a barra mantém a proporção real.
+   Usado em /iplace-hoje/ e /hoje-pay/, cada um com o próprio texto: mudou a
+   marcação em um, muda no outro. */
 .plan{
   background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);
   padding:clamp(24px,3.4vw,44px);box-shadow:var(--sh-1);
@@ -746,10 +755,13 @@ html[data-os="android"] .redir__android{display:inline}
 .plan__legend{grid-area:legend;margin-bottom:var(--s-4)}
 .plan__k{font-size:.92rem;line-height:1.45;color:var(--muted);padding-right:var(--s-4)}
 .plan__k strong{
-  display:flex;align-items:center;gap:var(--s-2);margin-bottom:var(--s-1);color:var(--ink);
+  display:flex;align-items:flex-start;gap:var(--s-2);margin-bottom:var(--s-1);color:var(--ink);
   font-size:clamp(1.3rem,2.1vw,1.7rem);font-weight:800;letter-spacing:-.03em;line-height:1.15
 }
-.plan__k strong::before{content:"";flex:none;width:12px;height:12px;border-radius:3px;background:var(--pa)}
+/* amostra centrada na PRIMEIRA linha (1.15em = altura da linha): rótulo que
+   quebra em duas ("De 70% a 90% do valor do produto" no celular) não a
+   deixa boiando entre as linhas */
+.plan__k strong::before{content:"";flex:none;width:12px;height:12px;margin-top:calc((1.15em - 12px) / 2);border-radius:3px;background:var(--pa)}
 .plan__k--b strong::before{background:var(--pb)}
 /* quadrado na linha de base (0%), 4 px de raio só na ponta */
 .plan__bar{grid-area:bar;height:24px}

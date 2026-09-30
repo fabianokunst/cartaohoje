@@ -294,7 +294,7 @@ DESCRICOES = {
     "/": "O cartão: benefícios, os três passos para pedir, lojas parceiras do Grupo Herval, custos e as dúvidas mais frequentes.",
     "/baixar-o-app/": "Download do aplicativo Hoje para iPhone (App Store) e Android (Google Play). É por ele que o cartão é solicitado e gerenciado.",
     "/hoje-pay/": "Hoje Pay, a carteira digital dentro do app: passo a passo para comprar aparelhos Apple na iPlace usando um cartão Bradesco, Banco do Brasil ou BTG Pactual.",
-    "/iplace-hoje/": "Programa iPlace Hoje, exclusivo para clientes do Cartão Hoje: parcelamento de 70% a 90% do valor de um produto Apple em 21x, com três opções para a parcela final (trocar e renovar, devolver e encerrar ou pagar e concluir), regulamento e regras de renovação.",
+    "/iplace-hoje/": "Programa iPlace Hoje, exclusivo para clientes do Cartão Hoje: parcelamento de 70% a 90% do valor de um produto Apple em 21x, com três opções para a parcela final (trocar e renovar, devolver e encerrar ou pagar e concluir), e 10 perguntas e respostas: quem pode participar, produtos, taxas, renovação e a diferença para o Hoje Pay.",
     "/perguntas-frequentes/": "23 perguntas e respostas sobre solicitação, documentos, análise de crédito, bandeira, mensalidade, desbloqueio, segunda via, fatura e contestação de compras.",
     "/fale-conosco/": "Todos os canais de atendimento com telefones, horários e formulário de contato.",
     "/trabalhe-conosco/": "Carreiras na HS Financeira. As vagas são publicadas no portal do Grupo Herval.",

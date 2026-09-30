@@ -129,10 +129,12 @@ não fique defasado.
 - Ideal receber os arquivos mestres da agência para conferir a extração dos vetores.
 - Fotos são placeholders do Unsplash. As imagens de aparelhos Apple em `/hoje-pay/`
   são material de imprensa da Apple — confirmar direito de uso antes de publicar.
-- `/iplace-hoje/` reproduz o texto da iPlace. Antes de publicar, confirmar com a
-  iPlace/jurídico: a expressão "Banco Hoje" (o Hoje não é banco — o emissor é a HS
-  Financeira), o WhatsApp (51) 2324 2200 citado no regulamento (o do Hoje é
-  (51) 4042 1377) e se o Termo de Adesão deve continuar hospedado no site da iPlace.
-  A página usa a foto `foto/iphone.jpg` (Unsplash) no lugar da arte de produtos da iPlace.
+- `/iplace-hoje/` reproduz o texto da landing da iPlace; o FAQ vem do documento
+  "Perguntas e respostas — iPlace Hoje" (10 perguntas). Antes de publicar, confirmar
+  com a iPlace/jurídico a expressão "Banco Hoje" no corpo da página (o Hoje não é
+  banco — o emissor é a HS Financeira, como o próprio FAQ diz) e a legenda "De 10% a
+  30% do valor" no gráfico, que é a conta complementar aos 70%–90% e não está no
+  texto original. A página usa a foto `foto/iphone.jpg` (Unsplash) no lugar da arte
+  de produtos da iPlace.
 - `_probe.html` e `chamado/` são artefatos internos: não devem subir para produção.
 - Pendências de SEO e conteúdo: ver a última seção do [SEO.md](SEO.md).
