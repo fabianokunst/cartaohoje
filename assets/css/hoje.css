@@ -737,7 +737,7 @@ html[data-os="android"] .redir__android{display:inline}
 .plan__bar,.plan__legend{display:grid;grid-template-columns:minmax(0,1fr) var(--fin);gap:var(--s-3)}
 .plan__bar{height:22px}
 .plan__n{display:flex;gap:4px}
-.plan__n i{flex:1;border-radius:5px;background:var(--coral)}
+.plan__n>span{flex:1;border-radius:5px;background:var(--coral)}
 .plan__f{border:2px solid var(--coral);border-radius:7px;background:var(--coral-wash)}
 .plan__legend{margin-top:var(--s-5)}
 .plan__k{display:block;font-size:.92rem;line-height:1.45;color:var(--muted)}
@@ -749,7 +749,7 @@ html[data-os="android"] .redir__android{display:inline}
 @media (max-width:620px){
   .plan{--fin:34%}
   .plan__n{gap:2px}
-  .plan__n i{border-radius:2px}
+  .plan__n>span{border-radius:2px}
 }
 
 /* "Exclusivo: hoje". O wordmark fica no tamanho mínimo de tela (72 px) ou

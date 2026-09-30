@@ -26,6 +26,7 @@ import io
 import os
 import re
 from html.parser import HTMLParser
+from urllib.parse import urljoin
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://cartaohoje.com.br"
@@ -65,8 +66,9 @@ INLINE = {"a", "abbr", "b", "code", "em", "i", "small", "span", "strong"}
 class ParaMarkdown(HTMLParser):
     """Converte o <main> de uma página em Markdown legível."""
 
-    def __init__(self):
+    def __init__(self, base="/"):
         super().__init__(convert_charrefs=True)
+        self.base = base         # URL da página, para resolver links relativos
         self.saida = []          # linhas prontas
         self.buf = []            # texto da linha em construção
         self.pilha = []          # tags abertas
@@ -91,9 +93,12 @@ class ParaMarkdown(HTMLParser):
         self.saida.append((pref or "") + txt)
 
     def _abs(self, url):
-        if url.startswith("/"):
-            return SITE + url
-        return url
+        # Os links do HTML são relativos (../hoje-pay/index.html), para o site
+        # abrir direto da pasta. Aqui viram a URL pública e limpa da página.
+        if url.startswith(("#", "tel:", "mailto:", "http:", "https:")):
+            return url
+        u = urljoin(SITE + self.base, url)
+        return re.sub(r"(^|/)index\.html(?=$|#)", r"\1", u)
 
     # ------------------------------------------------------------- handlers
     def handle_starttag(self, tag, attrs):
@@ -200,9 +205,9 @@ class ParaMarkdown(HTMLParser):
             self.buf.append(dados)
 
 
-def markdown_da_pagina(caminho):
+def markdown_da_pagina(caminho, url="/"):
     html = io.open(os.path.join(RAIZ, caminho), encoding="utf-8").read()
-    p = ParaMarkdown()
+    p = ParaMarkdown(url)
     p.feed(html)
     p._flush()
 
@@ -320,7 +325,7 @@ def escrever_llms_full():
     ]
     for url, caminho, nome in PAGINAS:
         partes += ["", "=" * 78, "", "# %s" % nome, "", "URL: %s%s" % (SITE, url), "",
-                   markdown_da_pagina(caminho), ""]
+                   markdown_da_pagina(caminho, url), ""]
     texto = "\n".join(partes).rstrip() + "\n"
     texto = re.sub(r"\n{3,}", "\n\n", texto)
     io.open(os.path.join(RAIZ, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write(texto)

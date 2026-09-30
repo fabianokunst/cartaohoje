@@ -26,6 +26,7 @@ python -m http.server 8000
 | `/` | `index.html` | Home |
 | `/perguntas-frequentes/` | `perguntas-frequentes/index.html` | FAQ completo, com marcação `FAQPage` |
 | `/hoje-pay/` | `hoje-pay/index.html` | Hoje Pay, com marcação `HowTo` |
+| `/iplace-hoje/` | `iplace-hoje/index.html` | Programa iPlace Hoje — conteúdo da landing da iPlace (`iplace.com.br/programa-hoje`) no visual do Hoje, com marcação `FAQPage` |
 | `/fale-conosco/` | `fale-conosco/index.html` | Canais de atendimento + formulário |
 | `/trabalhe-conosco/` | `trabalhe-conosco/index.html` | Carreiras |
 | `/baixar-o-app/` | `baixar-o-app/index.html` | **Download do app** — escolha manual no desktop, redirecionamento automático no celular |
@@ -101,9 +102,10 @@ Abra **[`design-system/`](design-system/index.html)** antes de mexer em qualquer
 ele carrega o mesmo `hoje.css` e mostra cada token e componente renderizado, com as
 regras de uso e a tabela de contraste verificada.
 
-Header e rodapé são idênticos nas sete páginas. Como não há build, alterá-los exige
-editar os sete arquivos — limitação consciente do protótipo, resolvida na migração
-para Astro (ver PROPOSTA.md, seção 2.1).
+Header e rodapé são idênticos em todas as páginas. Como não há build, alterá-los exige
+editar arquivo por arquivo — limitação consciente do protótipo, resolvida na migração
+para Astro (ver PROPOSTA.md, seção 2.1). Com sete itens, o menu só cabe em uma linha
+acima de 1080 px; um oitavo item pede outra solução (encurtar rótulos ou agrupar).
 
 Ao mexer no texto de uma página, rode `tools/gerar-llms.py` para que `llms-full.txt`
 não fique defasado.
@@ -127,5 +129,10 @@ não fique defasado.
 - Ideal receber os arquivos mestres da agência para conferir a extração dos vetores.
 - Fotos são placeholders do Unsplash. As imagens de aparelhos Apple em `/hoje-pay/`
   são material de imprensa da Apple — confirmar direito de uso antes de publicar.
+- `/iplace-hoje/` reproduz o texto da iPlace. Antes de publicar, confirmar com a
+  iPlace/jurídico: a expressão "Banco Hoje" (o Hoje não é banco — o emissor é a HS
+  Financeira), o WhatsApp (51) 2324 2200 citado no regulamento (o do Hoje é
+  (51) 4042 1377) e se o Termo de Adesão deve continuar hospedado no site da iPlace.
+  A página usa a foto `foto/iphone.jpg` (Unsplash) no lugar da arte de produtos da iPlace.
 - `_probe.html` e `chamado/` são artefatos internos: não devem subir para produção.
 - Pendências de SEO e conteúdo: ver a última seção do [SEO.md](SEO.md).
