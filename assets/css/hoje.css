@@ -89,12 +89,19 @@ ul,ol{margin:0;padding:0;list-style:none}
 .dark .lead,.dark .muted{color:rgba(244,240,234,.72)}
 .tinted{background:var(--cream-2)}
 
-.grid{display:grid;gap:clamp(20px,2.4vw,30px)}
+.grid{display:grid;--gap:clamp(20px,2.4vw,30px);gap:var(--gap)}
 .cols-2{grid-template-columns:repeat(2,1fr)}
 .cols-3{grid-template-columns:repeat(3,1fr)}
 .cols-4{grid-template-columns:repeat(4,1fr)}
 @media (max-width:960px){.cols-3,.cols-4{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:620px){.cols-2,.cols-3,.cols-4{grid-template-columns:1fr}}
+/* .grid--center: centraliza a última linha quando ela fica incompleta */
+.grid--center{display:flex;flex-wrap:wrap;justify-content:center;--n:3}
+.grid--center>*{flex:0 0 calc((100% - (var(--n) - 1) * var(--gap)) / var(--n));min-width:0}
+.grid--center.cols-2{--n:2}
+.grid--center.cols-4{--n:4}
+@media (max-width:960px){.grid--center.cols-3,.grid--center.cols-4{--n:2}}
+@media (max-width:620px){.grid--center.cols-2,.grid--center.cols-3,.grid--center.cols-4{--n:1}}
 
 /* ---------- 4. Tipografia utilitária ---------- */
 .eyebrow{
