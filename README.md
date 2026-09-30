@@ -10,9 +10,12 @@ sem dependências: HTML, CSS e ~60 linhas de JavaScript.
 
 ## Como abrir
 
-O site usa URLs limpas (`/hoje-pay/`) e caminhos absolutos (`/assets/…`), então precisa
-ser servido por HTTP. Abrir o `index.html` por duplo clique mostra a home, mas os links
-e as imagens não resolvem.
+Os links e as imagens usam caminhos relativos (`../assets/…`, `../hoje-pay/index.html`),
+então o site abre direto da pasta: duplo clique no `index.html`. O mesmo HTML roda no
+GitHub Pages (https://fabianokunst.github.io/cartaohoje/), que serve o site dentro de
+um subdiretório, e na raiz do domínio definitivo.
+
+Para ver como fica servido por HTTP:
 
 ```bash
 python -m http.server 8000
@@ -84,13 +87,16 @@ Nenhuma é obrigatória para o site rodar — ele continua sendo HTML estático.
 utilitários de manutenção, sem dependências além da biblioteca padrão:
 
 ```bash
-python tools/checar-seo.py    # confere links, canonicals, sitemap, JSON-LD, OG
+python tools/checar-seo.py    # confere links relativos, canonicals, sitemap, JSON-LD, OG
 python tools/gerar-llms.py    # regenera llms.txt e llms-full.txt a partir do HTML
 python tools/gerar-og.py      # regenera os cards de compartilhamento (requer Pillow)
 ```
 
 **Rode os dois antes de publicar.** O `checar-seo.py` sai com código 1 se achar erro,
-então serve como passo de CI.
+então serve como passo de CI. Ele resolve cada link e asset a partir da própria página:
+caminho absoluto (`/assets/…`) e link para pasta (`../hoje-pay/`) contam como erro,
+porque não abrem direto da pasta; nome com outra caixa de letras (`Foto.JPG` para
+`foto.jpg`) também, porque o Windows abre e o GitHub Pages não.
 
 ## Editando
 

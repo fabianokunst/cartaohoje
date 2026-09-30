@@ -44,12 +44,23 @@ nginx, Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3 — sem uma linha de
 regra de reescrita. Regra de reescrita é coisa que quebra na migração de host e
 ninguém percebe; diretório é diretório em todo lugar.
 
-O custo: os caminhos viraram absolutos (`/assets/…`), então o site precisa ser
-servido por HTTP. Abrir por duplo clique não navega mais. É a troca certa —
-`python -m http.server 8000` resolve o desenvolvimento local.
+Os links internos e os assets usam caminhos **relativos à própria página**
+(`../assets/…`, `../hoje-pay/index.html`), com o `index.html` escrito por
+extenso. Assim o mesmo HTML abre por duplo clique direto da pasta, roda no
+GitHub Pages — que serve o protótipo dentro de um subdiretório,
+`/cartaohoje/` — e na raiz do domínio definitivo. Caminho absoluto
+(`/assets/…`) quebraria os dois primeiros.
 
-`canonical`, `og:url`, sitemap, JSON-LD e todos os links internos foram alinhados
-a esses endereços. O `tools/checar-seo.py` falha se algum sair de sincronia.
+O custo: em produção, o link interno aponta para `/hoje-pay/index.html`, não
+para a URL limpa. As configurações de `deploy/` redirecionam `…/index.html`
+para `…/`, então o Google continua vendo uma URL só por página — mas cada
+clique interno passa por um redirecionamento. Na migração para Astro
+(PROPOSTA.md, seção 2.1), os links podem voltar a ser limpos.
+
+`canonical`, `og:url`, sitemap e JSON-LD usam os endereços limpos
+(`https://cartaohoje.com.br/hoje-pay/`). O `tools/checar-seo.py` falha se o
+canonical ou o sitemap saírem de sincronia, ou se um link relativo não chegar a
+um arquivo que existe.
 
 ---
 
