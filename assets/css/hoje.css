@@ -716,3 +716,73 @@ html[data-os="android"] .redir__android{display:inline}
   .redir{display:none!important}
   .dl__qr{display:flex!important;background:none;padding:0}
 }
+
+/* ---------- 26. iPlace Hoje ---------- */
+/* Foto do hero com o selo "21x" por cima: reaproveita o .hero__chip da home,
+   que precisa de um pai posicionado. */
+.ph-art{position:relative}
+.ph-art .hero__chip{top:auto;right:auto;left:-5%;bottom:9%}
+@media (max-width:900px){.ph-art .hero__chip{left:var(--s-4);bottom:var(--s-4)}}
+
+/* Plano 21x + parcela final. A barra é só desenho (aria-hidden): 21 parcelas
+   iguais e uma maior, vazada. O sentido está na legenda, que é texto e usa a
+   mesma grade da barra para cair embaixo de cada parte. */
+.plan{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:clamp(24px,3.4vw,44px);box-shadow:var(--sh-1);--fin:24%
+}
+.plan__bar,.plan__legend{display:grid;grid-template-columns:minmax(0,1fr) var(--fin);gap:var(--s-3)}
+.plan__bar{height:22px}
+.plan__n{display:flex;gap:4px}
+.plan__n i{flex:1;border-radius:5px;background:var(--coral)}
+.plan__f{border:2px solid var(--coral);border-radius:7px;background:var(--coral-wash)}
+.plan__legend{margin-top:var(--s-5)}
+.plan__legend strong{display:block;font-size:clamp(1.3rem,2.1vw,1.7rem);font-weight:800;letter-spacing:-.03em;line-height:1.15}
+.plan__legend span{display:block;margin-top:var(--s-1);font-size:.92rem;line-height:1.45;color:var(--muted)}
+.plan__legal{margin-top:var(--s-6);padding-top:var(--s-5);border-top:1px solid var(--line);font-size:.8rem;color:var(--muted-2)}
+@media (max-width:620px){
+  .plan{--fin:34%}
+  .plan__n{gap:2px}
+  .plan__n i{border-radius:2px}
+}
+
+/* "Exclusivo: hoje". O wordmark fica no tamanho mínimo de tela (72 px) ou
+   acima, e o vão até o texto cobre a área de proteção de meia altura. */
+.excl{
+  display:flex;align-items:center;gap:var(--s-6);margin:0 0 var(--s-8);
+  font-size:clamp(1.2rem,1.7vw,1.45rem);font-weight:800;letter-spacing:-.025em;color:#fff
+}
+.excl img{width:80px;height:auto;flex:none}
+.note__t{display:block;margin-bottom:var(--s-1)}
+
+/* QR ao lado dos selos das lojas. Some no celular pelo mesmo motivo do
+   .dl__qr: ninguém lê o próprio QR na própria tela. */
+.qrcard{display:flex;align-items:center;gap:clamp(20px,3vw,36px)}
+.qrcard .eyebrow{margin-bottom:var(--s-3)}
+.qrcard p:not(.eyebrow){color:#fff;font-size:1.02rem;font-weight:600;line-height:1.5;letter-spacing:-.01em}
+.qrcard img{width:clamp(132px,12vw,160px);height:auto;flex:none;border-radius:var(--r-xs)}
+@media (max-width:620px){.qrcard{display:none}}
+
+/* Vitrine de categorias: atalhos para o site da iPlace. Mesma conta do
+   .grid--center, com a última linha incompleta centralizada. No celular cada
+   atalho vira uma linha: ícone, nome e seta. */
+.prods{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--s-4);--n:5}
+.prods>li{flex:0 0 calc((100% - (var(--n) - 1) * var(--s-4)) / var(--n));min-width:0}
+@media (max-width:960px){.prods{--n:3}}
+@media (max-width:620px){.prods{--n:1;gap:var(--s-3)}}
+.prod{
+  display:flex;flex-direction:column;gap:var(--s-8);height:100%;padding:var(--s-6);
+  background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh-1);
+  transition:transform .22s cubic-bezier(.2,.8,.3,1),box-shadow .22s,border-color .22s
+}
+.prod:hover{transform:translateY(-4px);box-shadow:var(--sh-2);border-color:var(--line-2)}
+.prod__ic{width:52px;height:52px;border-radius:var(--r-sm);background:var(--coral-wash);display:grid;place-items:center;flex:none}
+.prod__ic svg{width:26px;height:26px;color:var(--coral-ink)}
+.prod__t{display:flex;align-items:center;justify-content:space-between;gap:var(--s-2);font-size:1.075rem;font-weight:800;letter-spacing:-.02em}
+.prod__t svg{width:17px;height:17px;flex:none;color:var(--coral-ink);transition:transform .18s}
+.prod:hover .prod__t svg{transform:translateX(3px)}
+@media (max-width:620px){
+  .prod{flex-direction:row;align-items:center;gap:var(--s-4);padding:var(--s-3) var(--s-5) var(--s-3) var(--s-3);border-radius:var(--r)}
+  .prod__ic{width:44px;height:44px}
+  .prod__t{flex:1}
+}
