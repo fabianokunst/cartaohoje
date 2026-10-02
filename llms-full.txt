@@ -417,15 +417,7 @@ O Hoje Pay pode ser utilizado para comprar aparelhos Apple participantes do prog
 
 - Escolha o produto no site iPlace e selecione a opção HojePay entre as formas de pagamento.
 
-- Adicione o produto ao carrinho.
-
-- Após finalizar o pedido, acesse o aplicativo Hoje para visualizar a solicitação de pagamento.
-
-- Confirme a transação diretamente no app.
-
-- Após a aprovação, seu pedido será processado e você poderá acompanhar o status da compra pelos canais iPlace.
-
-**Importante:** a confirmação da compra no aplicativo Hoje é uma etapa obrigatória. Sem essa validação, o pedido não será confirmado.
+- Adicione o produto ao carrinho e finalize a compra.
 
 ### O que fazer se a compra for recusada?
 
