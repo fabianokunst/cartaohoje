@@ -469,7 +469,7 @@ Sim. O cartão cadastrado precisa estar válido e possuir limite disponível par
 
 A principal diferença entre os programas **iPlace Hoje** e **Hoje Pay** está na forma de pagamento e nos requisitos para participar.
 
-**iPlace Hoje:** para participar, é necessário ter o **Cartão Hoje**. Ao utilizar o cartão, você pode aproveitar os benefícios do programa [iPlace Hoje](https://cartaohoje.com.br/iplace-hoje/).
+**iPlace Hoje:** para participar, é necessário ter o **Cartão Hoje**. Ao utilizar o cartão, você pode aproveitar os benefícios do programa iPlace Hoje.
 
 **Hoje Pay:** não é necessário solicitar o Cartão Hoje. Para participar, é preciso cadastrar, na **Wallet do Hoje Pay**, um cartão Bradesco, BTG Pactual ou Banco do Brasil elegível. A Wallet está disponível no aplicativo do Cartão Hoje. Nesse caso, não é necessário passar por uma nova análise de crédito para solicitar o Cartão Hoje.
 
@@ -625,7 +625,7 @@ A principal diferença entre os programas **iPlace Hoje** e **Hoje Pay** está n
 
 **iPlace Hoje:** para participar, é necessário ter o **Cartão Hoje**. Ao utilizar o cartão, você pode aproveitar os benefícios do programa iPlace Hoje.
 
-**Hoje Pay:** não é necessário solicitar o Cartão Hoje. Para participar, é preciso cadastrar, na [Wallet do Hoje Pay](https://cartaohoje.com.br/hoje-pay/), um cartão Bradesco, BTG Pactual ou Banco do Brasil elegível. A Wallet está disponível no aplicativo do Cartão Hoje. Nesse caso, não é necessário passar por uma nova análise de crédito para solicitar o Cartão Hoje.
+**Hoje Pay:** não é necessário solicitar o Cartão Hoje. Para participar, é preciso cadastrar, na **Wallet do Hoje Pay**, um cartão Bradesco, BTG Pactual ou Banco do Brasil elegível. A Wallet está disponível no aplicativo do Cartão Hoje. Nesse caso, não é necessário passar por uma nova análise de crédito para solicitar o Cartão Hoje.
 
 **Resumindo:**
 
